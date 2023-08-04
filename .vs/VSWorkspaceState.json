@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\sass",
     "\\images"
   ],
   "PreviewInSolutionExplorer": false
