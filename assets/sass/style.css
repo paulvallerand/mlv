@@ -15,7 +15,6 @@ body {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-  text-transform: capitalize;
 }
 
 img {
@@ -381,7 +380,6 @@ Theme Btn CSS
   font-weight: 600;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  text-transform: capitalize;
 }
 
 .simple-btn i {
@@ -399,7 +397,6 @@ Theme Btn CSS
   position: relative;
   font-weight: 500;
   color: #F94D1D;
-  text-transform: capitalize;
   z-index: 1;
   margin-bottom: 6px;
   padding-left: 70px;
@@ -430,7 +427,6 @@ Theme Btn CSS
   position: relative;
   font-weight: 600;
   color: #F94D1D;
-  text-transform: capitalize;
   z-index: 1;
   margin-bottom: 6px;
 }
@@ -3180,7 +3176,6 @@ Blog
   color: #CFD0D0;
   -webkit-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
-  text-transform: capitalize;
   font-weight: 500;
 }
 
@@ -4303,7 +4298,6 @@ Portfolio
   display: inline-block;
   position: relative;
   color: #030404;
-  text-transform: capitalize;
   z-index: 1;
   padding-left: 40px;
 }
@@ -4369,7 +4363,6 @@ Portfolio Two
   display: inline-block;
   position: relative;
   color: #030404;
-  text-transform: capitalize;
   z-index: 1;
   padding-left: 40px;
 }
@@ -4456,7 +4449,6 @@ Portfolio Column
   display: inline-block;
   position: relative;
   color: #030404;
-  text-transform: capitalize;
   z-index: 1;
   padding-left: 40px;
 }
@@ -4515,7 +4507,6 @@ Portfolio Column Two
   display: inline-block;
   position: relative;
   color: #030404;
-  text-transform: capitalize;
   z-index: 1;
   padding-left: 40px;
 }
@@ -5741,7 +5732,6 @@ Menu Bar
     padding: 0;
     margin: 0;
     font-size: 16px;
-    text-transform: capitalize;
     font-weight: 500;
     display: block;
     font-size: 18px;
@@ -5796,7 +5786,6 @@ Menu Bar
   color: #030404;
   padding: 12px 20px;
   font-size: 16px;
-  text-transform: capitalize;
   font-weight: 500;
   position: relative;
 }
@@ -6308,7 +6297,6 @@ Mean Menu Css
   font-size: 16px;
   line-height: 26px;
   font-weight: 600;
-  text-transform: capitalize;
   border-top: 1px solid #3F4144;
   opacity: 1;
 }
