@@ -4255,18 +4255,18 @@ Clients
 }
 
 /*==========================================================================
-Portfolio
+Services
 ==========================================================================*/
-.portfolio__area {
+.Services__area {
   background: #121717;
 }
 
-.portfolio__area-item-image {
+.Services__area-item-image {
   position: relative;
   z-index: 1;
 }
 
-.portfolio__area-item-image::before {
+.Services__area-item-image::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -4281,7 +4281,7 @@ Portfolio
   opacity: 0;
 }
 
-.portfolio__area-item-image-content {
+.Services__area-item-image-content {
   position: absolute;
   bottom: 35px;
   -webkit-transition: all .4s ease-out 0s;
@@ -4294,7 +4294,7 @@ Portfolio
   display: inline-block;
 }
 
-.portfolio__area-item-image-content span {
+.Services__area-item-image-content span {
   display: inline-block;
   position: relative;
   color: #030404;
@@ -4302,7 +4302,7 @@ Portfolio
   padding-left: 40px;
 }
 
-.portfolio__area-item-image-content span::after {
+.Services__area-item-image-content span::after {
   position: absolute;
   top: 13px;
   content: '';
@@ -4312,42 +4312,42 @@ Portfolio
   background: #F94D1D;
 }
 
-.portfolio__area-item-image-content h4 a {
+.Services__area-item-image-content h4 a {
   display: block;
   color: #030404;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
 }
 
-.portfolio__area-item-image-content h4 a:hover {
+.Services__area-item-image-content h4 a:hover {
   color: #F94D1D;
 }
 
-.portfolio__area-item-hover .portfolio__area-item-image::before {
+.Services__area-item-hover .Services__area-item-image::before {
   opacity: 1;
 }
 
-.portfolio__area-item-hover .portfolio__area-item-image-content {
+.Services__area-item-hover .Services__area-item-image-content {
   opacity: 1;
   right: 50px;
 }
 
 /*==========================================================================
-Portfolio Two
+Services Two
 ==========================================================================*/
-.portfolio__area-two {
+.Services__area-two {
   background: #121717;
 }
 
-.portfolio__area-two-title {
+.Services__area-two-title {
   text-align: center;
 }
 
-.portfolio__area-two-item {
+.Services__area-two-item {
   position: relative;
 }
 
-.portfolio__area-two-item-content {
+.Services__area-two-item-content {
   position: absolute;
   bottom: 35px;
   -webkit-transition: all .4s ease-out 0s;
@@ -4359,7 +4359,7 @@ Portfolio Two
   opacity: 0;
 }
 
-.portfolio__area-two-item-content span {
+.Services__area-two-item-content span {
   display: inline-block;
   position: relative;
   color: #030404;
@@ -4367,7 +4367,7 @@ Portfolio Two
   padding-left: 40px;
 }
 
-.portfolio__area-two-item-content span::after {
+.Services__area-two-item-content span::after {
   position: absolute;
   top: 13px;
   content: '';
@@ -4377,36 +4377,36 @@ Portfolio Two
   background: #F94D1D;
 }
 
-.portfolio__area-two-item-content h4 a {
+.Services__area-two-item-content h4 a {
   display: block;
   color: #030404;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
 }
 
-.portfolio__area-two-item-content h4 a:hover {
+.Services__area-two-item-content h4 a:hover {
   color: #F94D1D;
 }
 
-.portfolio__area-two-item:hover .portfolio__area-two-item-content {
+.Services__area-two-item:hover .Services__area-two-item-content {
   opacity: 1;
   left: 60px;
 }
 
-.portfolio__area-two-btn {
+.Services__area-two-btn {
   text-align: center;
   max-width: 990px;
   margin: 0 auto;
   margin-top: 40px;
 }
 
-.portfolio__area-two-btn ul {
+.Services__area-two-btn ul {
   border-bottom: 1px solid #3F4144;
   padding: 0;
   margin: 0;
 }
 
-.portfolio__area-two-btn ul li {
+.Services__area-two-btn ul li {
   display: inline-block;
   list-style: none;
   padding: 0 24px 18px 24px;
@@ -4416,23 +4416,23 @@ Portfolio Two
   font-family: "Ubuntu", sans-serif;
 }
 
-.portfolio__area-two-btn ul li.active {
+.Services__area-two-btn ul li.active {
   color: #F94D1D;
   border-bottom: 2px solid #F94D1D;
 }
 
 /*==========================================================================
-Portfolio Column
+Services Column
 ==========================================================================*/
-.portfolio__column {
+.Services__column {
   background: #121717;
 }
 
-.portfolio__column-item {
+.Services__column-item {
   position: relative;
 }
 
-.portfolio__column-item-content {
+.Services__column-item-content {
   position: absolute;
   bottom: 35px;
   -webkit-transition: all .4s ease-out 0s;
@@ -4445,7 +4445,7 @@ Portfolio Column
   display: inline-block;
 }
 
-.portfolio__column-item-content span {
+.Services__column-item-content span {
   display: inline-block;
   position: relative;
   color: #030404;
@@ -4453,7 +4453,7 @@ Portfolio Column
   padding-left: 40px;
 }
 
-.portfolio__column-item-content span::after {
+.Services__column-item-content span::after {
   position: absolute;
   top: 13px;
   content: '';
@@ -4463,34 +4463,34 @@ Portfolio Column
   background: #F94D1D;
 }
 
-.portfolio__column-item-content h4 a {
+.Services__column-item-content h4 a {
   display: block;
   color: #030404;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
 }
 
-.portfolio__column-item-content h4 a:hover {
+.Services__column-item-content h4 a:hover {
   color: #F94D1D;
 }
 
-.portfolio__column-item:hover .portfolio__column-item-content {
+.Services__column-item:hover .Services__column-item-content {
   opacity: 1;
   left: 60px;
 }
 
 /*==========================================================================
-Portfolio Column Two
+Services Column Two
 ==========================================================================*/
-.portfolio__column-two {
+.Services__column-two {
   background: #121717;
 }
 
-.portfolio__column-two-item {
+.Services__column-two-item {
   position: relative;
 }
 
-.portfolio__column-two-item-content {
+.Services__column-two-item-content {
   position: absolute;
   bottom: 35px;
   -webkit-transition: all .4s ease-out 0s;
@@ -4503,7 +4503,7 @@ Portfolio Column Two
   display: inline-block;
 }
 
-.portfolio__column-two-item-content span {
+.Services__column-two-item-content span {
   display: inline-block;
   position: relative;
   color: #030404;
@@ -4511,7 +4511,7 @@ Portfolio Column Two
   padding-left: 40px;
 }
 
-.portfolio__column-two-item-content span::after {
+.Services__column-two-item-content span::after {
   position: absolute;
   top: 13px;
   content: '';
@@ -4521,58 +4521,58 @@ Portfolio Column Two
   background: #F94D1D;
 }
 
-.portfolio__column-two-item-content h4 a {
+.Services__column-two-item-content h4 a {
   display: block;
   color: #030404;
   -webkit-transition: all .4s ease-out 0s;
   transition: all .4s ease-out 0s;
 }
 
-.portfolio__column-two-item-content h4 a:hover {
+.Services__column-two-item-content h4 a:hover {
   color: #F94D1D;
 }
 
-.portfolio__column-two-item:hover .portfolio__column-two-item-content {
+.Services__column-two-item:hover .Services__column-two-item-content {
   opacity: 1;
   right: 60px;
 }
 
 /*==========================================================================
-Portfolio Details
+Services Details
 ==========================================================================*/
-.portfolio__details {
+.Services__details {
   background: #121717;
 }
 
-.portfolio__details-left h2 {
+.Services__details-left h2 {
   max-width: 600px;
 }
 
-.portfolio__details-image {
+.Services__details-image {
   margin-top: -65px;
   position: relative;
   z-index: 0;
 }
 
-.portfolio__details-two {
+.Services__details-two {
   background: #121717;
 }
 
-.portfolio__details-two-left-content p {
+.Services__details-two-left-content p {
   max-width: 373px;
 }
 
-.portfolio__details-two-left-details {
+.Services__details-two-left-details {
   margin-top: 30px;
   padding-top: 30px;
   border-top: 1px solid #3F4144;
 }
 
-.portfolio__details-two-left-details-list {
+.Services__details-two-left-details-list {
   margin-bottom: 30px;
 }
 
-.portfolio__details-two-left-details-list span {
+.Services__details-two-left-details-list span {
   display: inline-block;
   color: #9FA0A1;
   position: relative;
@@ -4580,7 +4580,7 @@ Portfolio Details
   margin-top: 5px;
 }
 
-.portfolio__details-two-left-details-list span::after {
+.Services__details-two-left-details-list span::after {
   position: absolute;
   top: 13px;
   content: '';
@@ -4590,29 +4590,29 @@ Portfolio Details
   background: #F94D1D;
 }
 
-.portfolio__details-two-left-details-list:last-child {
+.Services__details-two-left-details-list:last-child {
   margin: 0;
 }
 
 @media (max-width: 1199px) {
-  .portfolio__area-two-item-content {
+  .Services__area-two-item-content {
     left: 30px;
   }
-  .portfolio__area-two-item:hover .portfolio__area-two-item-content {
+  .Services__area-two-item:hover .Services__area-two-item-content {
     left: 40px;
   }
-  .portfolio__area-two-btn {
+  .Services__area-two-btn {
     text-align: center;
     max-width: 990px;
     margin: 0 auto;
     margin-top: 40px;
   }
-  .portfolio__area-two-btn ul {
+  .Services__area-two-btn ul {
     border-bottom: 1px solid #3F4144;
     padding: 0;
     margin: 0;
   }
-  .portfolio__area-two-btn ul li {
+  .Services__area-two-btn ul li {
     display: inline-block;
     list-style: none;
     padding: 0 20px 18px 20px;
@@ -4620,84 +4620,84 @@ Portfolio Details
     font-weight: 500;
     cursor: pointer;
   }
-  .portfolio__area-two-btn ul li.active {
+  .Services__area-two-btn ul li.active {
     color: #F94D1D;
     border-bottom: 2px solid #F94D1D;
   }
 }
 
 @media (max-width: 991px) {
-  .portfolio__column-item-content {
+  .Services__column-item-content {
     bottom: 30px;
     padding: 30px;
     padding-right: 80px;
     left: 50px;
   }
-  .portfolio__column-item:hover .portfolio__column-item-content {
+  .Services__column-item:hover .Services__column-item-content {
     left: 30px;
   }
-  .portfolio__column-two-item-content {
+  .Services__column-two-item-content {
     bottom: 30px;
     padding-right: 80px;
     right: 50px;
   }
-  .portfolio__column-two-item:hover .portfolio__column-two-item-content {
+  .Services__column-two-item:hover .Services__column-two-item-content {
     right: 30px;
   }
-  .portfolio__details-image {
+  .Services__details-image {
     margin-top: 30px;
   }
-  .portfolio__details-two {
+  .Services__details-two {
     background: #121717;
   }
-  .portfolio__details-two-left-content p {
+  .Services__details-two-left-content p {
     max-width: none;
   }
 }
 
 @media (max-width: 575px) {
-  .portfolio__area {
+  .Services__area {
     background: #121717;
   }
-  .portfolio__area-item-image-content {
+  .Services__area-item-image-content {
     bottom: 30px;
     padding: 30px;
     padding-right: 60px;
     right: 50px;
   }
-  .portfolio__area-item-hover .portfolio__area-item-image-content {
+  .Services__area-item-hover .Services__area-item-image-content {
     right: 30px;
   }
-  .portfolio__area-two-btn ul li {
+  .Services__area-two-btn ul li {
     padding: 0 15px 18px 15px;
   }
-  .portfolio__area-two-item {
+  .Services__area-two-item {
     position: relative;
   }
-  .portfolio__area-two-item-content {
+  .Services__area-two-item-content {
     bottom: 30px;
     right: 30px;
     left: 20px;
   }
-  .portfolio__area-two-item:hover .portfolio__area-two-item-content {
+  .Services__area-two-item:hover .Services__area-two-item-content {
     left: 30px;
   }
-  .portfolio__column-item-content {
+  .Services__column-item-content {
     bottom: 30px;
     padding: 30px;
     padding-right: 60px;
     left: 50px;
   }
-  .portfolio__column-item:hover .portfolio__column-item-content {
+  .Services__column-item:hover .Services__column-item-content {
     left: 30px;
   }
-  .portfolio__column-two-item-content {
+  .Services__column-two-item-content {
     bottom: 30px;
     padding: 30px;
     padding-right: 60px;
     right: 50px;
   }
-  .portfolio__column-two-item:hover .portfolio__column-item-content {
+  .Services__column-two-item:hover .Services__column-item-content {
     right: 30px;
   }
 }

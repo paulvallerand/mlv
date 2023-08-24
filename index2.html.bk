@@ -5,7 +5,7 @@
 
        <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="description" content="Metier  - Portfolio HTML5 Template"/>
+	<meta name="description" content="Metier  - Services HTML5 Template"/>
 	<meta name="keywords" content="Creative, Digital, multipage, landing, freelancer template"/>
 	<meta name="author" content="ThemeOri">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,13 +76,13 @@
 								<li><a href="error.html">Error</a> </li>
 							</ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#">Portfolio</a>
+						<li class="menu-item-has-children"><a href="#">Services</a>
 							<ul class="sub-menu">
-								<li><a href="portfolio-1.html">Portfolio 01</a> </li>
-								<li><a href="portfolio-2.html">Portfolio 02</a> </li>
-								<li><a href="portfolio-3.html">Portfolio 03</a> </li>
-								<li><a href="portfolio-details.html">Portfolio Details 01</a> </li>
-								<li><a href="portfolio-details-2.html">Portfolio Details 02</a> </li>
+								<li><a href="Services-1.html">Services 01</a> </li>
+								<li><a href="Services-2.html">Services 02</a> </li>
+								<li><a href="Services-3.html">Services 03</a> </li>
+								<li><a href="Services-details.html">Services Details 01</a> </li>
+								<li><a href="Services-details-2.html">Services Details 02</a> </li>
 							</ul>
 						</li>
 						<li class="menu-item-has-children"><a href="#">News</a>
@@ -153,7 +153,7 @@
 			<div class="row">
 				<div class="col-xl-12">
 					<div class="banner__area-content">
-						<h1>Create your <span>Portfolio</span></h1> <a class="theme-btn" href="portfolio-3.html">All Project <i class="fal fa-long-arrow-right"></i></a> </div>
+						<h1>Create your <span>Services</span></h1> <a class="theme-btn" href="Services-3.html">All Project <i class="fal fa-long-arrow-right"></i></a> </div>
 				</div>
 			</div>
 		</div>
@@ -344,7 +344,7 @@
 						<div class="faq-item">
 							<div class="faq-item-card">
 								<div class="faq-item-card-header">
-									<h5>What are the acceptable formats for the portfolio?</h5> <i class="fal fa-angle-up"></i> </div>
+									<h5>What are the acceptable formats for the Services?</h5> <i class="fal fa-angle-up"></i> </div>
 								<div class="faq-item-card-header-content active">
 									<p>pellentesque in dolor vel malesuada. Donec finibus libero odio, ac iaculis metus mattis quis. Curabitur a tincidunt risus, non gravida ipsum. Sed at ligula porta, dictum magna id, molestie mi. Mauris et ligula dui. Aliquam erat volutpat. Nam pharetra, risus vitae bibendum pellentesque, dui metus convallis felis, non semper leo leo nec augue. Maecenas vestibulum ornare iaculis. Integer elit arcu, lobortis id felis eu, scelerisque maximus libero.</p>
 								</div>
@@ -400,7 +400,7 @@
 									<li><a href="index.html">Home</a></li>
 									<li><a href="services.html">Services</a></li>
 									<li><a href="blog-standard.html">News</a></li>
-									<li><a href="portfolio-1.html">Portfolio</a></li>
+									<li><a href="Services-1.html">Services</a></li>
 									<li><a href="contact.html">Contact</a></li>
 								</ul>
 							</div>

@@ -136,24 +136,24 @@
 	/*==========  isotope  ==========*/
 	$(window).on('load', function() {
 		/*========== Project Grid  ==========*/
-		var $grid = $('.portfolio__area-two-active').isotope({});
+		var $grid = $('.Services__area-two-active').isotope({});
 		/*========== Project Filter  ==========*/
-		$('.portfolio__area-two-btn').on('click', 'li', function() {
+		$('.Services__area-two-btn').on('click', 'li', function() {
 			var filterValue = $(this).attr('data-filter');
 			$grid.isotope({
 				filter: filterValue
 			});
 		});
 		/*========== Project Active  ==========*/
-		$('.portfolio__area-two-btn').on('click', 'li', function() {
+		$('.Services__area-two-btn').on('click', 'li', function() {
 			$(this).siblings('.active').removeClass('active');
 			$(this).addClass('active');
 		});
 	});
 	/*========== Active Hover  ==========*/
-	$(".portfolio__area-item").hover(function() {
-		$(".portfolio__area-item").removeClass("portfolio__area-item-hover");
-		$(this).addClass("portfolio__area-item-hover");
+	$(".Services__area-item").hover(function() {
+		$(".Services__area-item").removeClass("Services__area-item-hover");
+		$(this).addClass("Services__area-item-hover");
 	});
 	/*========== Active Hover  ==========*/
 	$(".features__area-item").hover(function() {
