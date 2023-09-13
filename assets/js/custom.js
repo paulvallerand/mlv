@@ -48,12 +48,6 @@
 			},
 		}
 	});
-	/*==========  counterUp  ==========*/
-	var counter = $('.counter');
-	counter.counterUp({
-		time: 2500,
-		delay: 100
-	});
 	$('.toggle-menu ul').hide();
 	$(".toggle-menu a").click(function() {
 		$(this).parent(".toggle-menu").children("ul").slideToggle("100");
