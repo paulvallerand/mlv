@@ -2,12 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\img",
+    "\\assets\\css",
+    "\\assets\\js",
     "\\assets\\sass",
     "\\images",
     "\\images\\modification",
     "\\images\\réparation"
   ],
-  "SelectedNode": "\\assets\\sass\\style.css",
+  "SelectedNode": "\\assets\\js\\bootstrap.min.js",
   "PreviewInSolutionExplorer": false
 }
