@@ -75,10 +75,6 @@
 	$('.video-popup').magnificPopup({
 		type: 'iframe'
 	});
-	/*==========  theme loader  ==========*/
-	$(window).on("load", function() {
-		$(".theme-loader").fadeOut(500);
-	});
 	// /*==========  Brand  ==========*/
 	var swiper = new Swiper(".sponsors-slider", {
 		slidesPerView: 3,
