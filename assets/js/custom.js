@@ -123,23 +123,7 @@
 			clickable: true,
 		},
 	});
-	/*==========  isotope  ==========*/
-	$(window).on('load', function() {
-		/*========== Project Grid  ==========*/
-		var $grid = $('.Services__area-two-active').isotope({});
-		/*========== Project Filter  ==========*/
-		$('.Services__area-two-btn').on('click', 'li', function() {
-			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({
-				filter: filterValue
-			});
-		});
-		/*========== Project Active  ==========*/
-		$('.Services__area-two-btn').on('click', 'li', function() {
-			$(this).siblings('.active').removeClass('active');
-			$(this).addClass('active');
-		});
-	});
+
 	/*========== Active Hover  ==========*/
 	$(".Services__area-item").hover(function() {
 		$(".Services__area-item").removeClass("Services__area-item-hover");
