@@ -34,6 +34,18 @@
 			meanMenuOpen: '<span></span><span></span><span></span>',
 			meanMenuClose: '<i class="fal fa-times"></i>'
 		});
+		// Fermer le menu mobile après un clic sur un lien
+		$(document).on('click', '.mean-nav a', function () {
+			var $reveal = $('.meanmenu-reveal.meanclose');
+			if ($reveal.length) $reveal.trigger('click');
+		});
+		// Marquer la page active dans le menu mobile
+		var current = window.location.pathname.split('/').pop() || 'index.html';
+		$('.mean-nav a').each(function () {
+			if ($(this).attr('href') === current) {
+				$(this).addClass('mean-current');
+			}
+		});
 	}
 	// /*==========  Features  ==========*/
 	if($(".features-slider").length) {
@@ -253,6 +265,14 @@ popup = {
 			if ((event.key === 'Escape' || event.key === 'Esc') && $('.popup').length) {
 				popup.close();
 			}
+			if (event.key === 'ArrowLeft' && $('.popup').length) {
+				event.preventDefault();
+				popup.navigate(-1);
+			}
+			if (event.key === 'ArrowRight' && $('.popup').length) {
+				event.preventDefault();
+				popup.navigate(1);
+			}
 		});
 
 		// Fermeture au clavier depuis le bouton de fermeture
@@ -263,18 +283,15 @@ popup = {
 			}
 		});
 	},
-	open: function ($figure) {
+		open: function ($figure) {
 		if ($('.popup').length) {
 			return;
 		}
 		popup.lastFocus = $figure[0];
 		$('.gallery').addClass('pop');
-		$popup = $('<div class="popup" role="dialog" aria-modal="true" aria-label="Aperçu de la photo" />').appendTo($('body'));
-		$fig = $figure.clone().removeAttr('tabindex role aria-label').appendTo($('.popup'));
+		$popup = $('<div class="popup" role="dialog" aria-modal="true" aria-label="Apercu de la photo" />').appendTo($('body'));
+		$fig = $figure.clone().removeAttr('tabindex role aria-label').appendTo($popup);
 		$img = $('img', $fig);
-		// La visionneuse utilise toujours l'image pleine résolution (1024 px).
-		// On reconstruit l'<img> pour éviter que le navigateur réutilise
-		// la variante 640 px déjà chargée pour la vignette.
 		var fullSrc = $figure.find('img').attr('src');
 		var $fresh = $('<img>', { src: fullSrc, alt: $img.attr('alt') });
 		if ($img.attr('width')) $fresh.attr('width', $img.attr('width'));
@@ -282,15 +299,60 @@ popup = {
 		$img.replaceWith($fresh);
 		$img = $('img', $fig);
 		src = fullSrc;
-		$bg = $('<div class="bg" />').appendTo($('.popup'));
+		$bg = $('<div class="bg" />').appendTo($popup);
 		$close = $('<div class="close" role="button" tabindex="0" aria-label="Fermer la visionneuse"></div>').appendTo($fig);
 		$shadow = $('<div class="shadow" />').appendTo($fig);
 		$shadow.css({ backgroundImage: 'url(' + src + ')' });
 		$bg.css({ backgroundImage: 'url(' + src + ')' });
+
+		// Navigation precedent / suivant
+		var $figures = $('.gallery figure');
+		popup.figures = $figures.toArray();
+		popup.currentIndex = $figures.index($figure);
+		if (popup.figures.length > 1) {
+			$prev = $('<button type="button" class="popup-nav popup-prev" aria-label="Photo precedente">&#10094;</button>').appendTo($popup);
+			$next = $('<button type="button" class="popup-nav popup-next" aria-label="Photo suivante">&#10095;</button>').appendTo($popup);
+			$prev.on('click', function (e) { e.stopPropagation(); popup.navigate(-1); });
+			$next.on('click', function (e) { e.stopPropagation(); popup.navigate(1); });
+		}
+
+		// Stockage des references pour la navigation
+		popup.$popup = $popup;
+		popup.$fig = $fig;
+		popup.$img = $img;
+		popup.$bg = $bg;
+		popup.$shadow = $shadow;
+
+		// Swipe tactile
+		var touchStartX = 0;
+		$popup.on('touchstart', function (e) {
+			touchStartX = e.originalEvent.touches[0].clientX;
+		}).on('touchend', function (e) {
+			var dx = e.originalEvent.changedTouches[0].clientX - touchStartX;
+			if (Math.abs(dx) > 50) {
+				popup.navigate(dx > 0 ? -1 : 1);
+			}
+		});
+
 		setTimeout(function () {
 			$('.popup').addClass('pop');
 			$('.popup .close').trigger('focus');
 		}, 10);
+	},
+	navigate: function (dir) {
+		if (!popup.figures || popup.figures.length < 2) return;
+		var len = popup.figures.length;
+		popup.currentIndex = (popup.currentIndex + dir + len) % len;
+		var $figure = $(popup.figures[popup.currentIndex]);
+		var $srcImg = $figure.find('img');
+		var fullSrc = $srcImg.attr('src');
+		var alt = $srcImg.attr('alt') || '';
+		var caption = $figure.find('figcaption').html() || '';
+		popup.$img.attr('src', fullSrc).attr('alt', alt);
+		popup.$fig.find('figcaption').html(caption);
+		popup.$shadow.css({ backgroundImage: 'url(' + fullSrc + ')' });
+		popup.$bg.css({ backgroundImage: 'url(' + fullSrc + ')' });
+		popup.lastFocus = popup.figures[popup.currentIndex];
 	},
 	close: function () {
 		$('.gallery, .popup').removeClass('pop');
@@ -305,3 +367,10 @@ popup = {
 }
 
 popup.init()
+
+// Service worker (cache offline) — enregistrement différé
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js').catch(function () {});
+  });
+}

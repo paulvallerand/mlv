@@ -1232,3 +1232,48 @@ textarea:focus-visible,
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+.popup-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 22px;
+  line-height: 44px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.popup-nav:hover,
+.popup-nav:focus {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.popup-prev {
+  left: 12px;
+}
+
+.popup-next {
+  right: 12px;
+}
+
+@media (max-width: 575px) {
+  .popup-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
