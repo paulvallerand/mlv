@@ -36,7 +36,9 @@
 	<!-- Mean menu -->
 	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="assets/sass/style.css"> 
+	<link rel="stylesheet" href="assets/sass/style.css">
+	<!-- Phase 1 CSS -->
+	<link rel="stylesheet" href="assets/css/phase1.css">
 
 </head>
 <body >
@@ -55,7 +57,7 @@
 					<ul id="mobilemenu">
 						<li class="menu-item"><a href="index.html">Accueil</a>
 						</li>
-						<li class="menu-item-has-children"><a href="#">Services</a>
+						<li class="menu-item-has-children"><a href="services-tous.html">Services</a>
 							<ul class="sub-menu">
 								<li><a href="services-decoupe.html">Découpe</a> </li>
 								<li><a href="services-fabrication.html">Fabrication</a> </li>
@@ -73,19 +75,29 @@
 	</div>
 	<!-- Header Area End -->
 	<!-- Banner Area Start -->
-	<div class="banner__area" data-background="assets/img/banner.webp">
+	<div class="banner__area hero" data-background="assets/img/banner.webp">
 		<div class="container">
-			<div class="row">
-				<div class="col-xl-4 banner__area-content">
-						<h2>Fondé en 2019</h2> 
-						<h3>Spécialisé dans la fabrication</h3> 
-						<h3>la maintenance industrielle</h3> 
-						<h3>et les travaux de soudage</h3>
+			<div class="row align-items-center">
+				<div class="col-xl-7 col-lg-6">
+					<div class="banner__area-content">
+						<span class="hero__eyebrow">Fabrication · Maintenance industrielle · Soudage</span>
+						<h1>Fabrication, soudage et maintenance industrielle <span>sur mesure</span></h1>
+						<p class="hero__lead">Depuis 2019, Mécanique Luc Vallerand conçoit, répare et installe des pièces et structures métalliques pour les entreprises de la Beauce et de la région de Québec.</p>
+						<div class="hero__actions">
+							<a href="contact.html" class="theme-btn-1 hero__btn">Demander une soumission <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+							<a href="tel:+14183134032" class="hero__call"><i class="fas fa-phone" aria-hidden="true"></i> 418-313-4032</a>
+						</div>
+						<ul class="hero__trust">
+							<li><i class="fas fa-check" aria-hidden="true"></i> Fabrication sur mesure</li>
+							<li><i class="fas fa-check" aria-hidden="true"></i> Réponse rapide</li>
+							<li><i class="fas fa-check" aria-hidden="true"></i> Basée en Beauce</li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-xl-8 d-flex">
-
-						<img src="images/pickup1.webp" class="img-fluid" alt="Véhicule utilitaire de Mécanique Luc Vallerand" loading="lazy">
-
+				<div class="col-xl-5 col-lg-6">
+					<div class="hero__visual">
+						<img src="images/pickup2.webp" alt="Véhicule utilitaire de Mécanique Luc Vallerand" loading="lazy">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -108,35 +120,35 @@
 						<div class="swiper-wrapper">
 							<div class="features__area-item swiper-slide"> <img src="assets/img/features-4.webp" alt="Découpe de métal en atelier" loading="lazy">
 								<div class="features__area-item-content">
-									<div class="features__area-item-content-icon"> <a href="services-decoupe.html"><i class="fal fa-plus"></i></a> </div>
+									<div class="features__area-item-content-icon"> <a href="services-decoupe.html" aria-label="Voir le service Découpe"><i class="fal fa-plus"></i></a> </div>
 									<h3><a href="services-decoupe.html">Découpe</a></h3>
 									<p>Découpe sur mesure</p>
 								</div>
 							</div>
 							<div class="features__area-item features__area-item-hover swiper-slide"> <img src="assets/img/features-2.webp" alt="Fabrication de pièces métalliques" loading="lazy">
 								<div class="features__area-item-content">
-									<div class="features__area-item-content-icon"> <a href="services-fabrication.html"><i class="fal fa-plus"></i></a> </div>
+									<div class="features__area-item-content-icon"> <a href="services-fabrication.html" aria-label="Voir le service Fabrication"><i class="fal fa-plus"></i></a> </div>
 									<h3><a href="services-fabrication.html">Fabrication</a></h3>
 									<p>Fabrication de précision</p>
 								</div>
 							</div>
 							<div class="features__area-item swiper-slide"> <img src="assets/img/features-3.webp" alt="Installation de structure métallique" loading="lazy">
 								<div class="features__area-item-content">
-									<div class="features__area-item-content-icon"> <a href="services-installation.html"><i class="fal fa-plus"></i></a> </div>
+									<div class="features__area-item-content-icon"> <a href="services-installation.html" aria-label="Voir le service Installation"><i class="fal fa-plus"></i></a> </div>
 									<h3><a href="services-installation.html">Installation</a></h3>
 									<p>Installation sur site</p>
 								</div>
 							</div>
 							<div class="features__area-item swiper-slide"> <img src="assets/img/features-1.webp" alt="Modification de pièce métallique" loading="lazy">
 								<div class="features__area-item-content">
-									<div class="features__area-item-content-icon"> <a href="services-modification.html"><i class="fal fa-plus"></i></a> </div>
+									<div class="features__area-item-content-icon"> <a href="services-modification.html" aria-label="Voir le service Modification"><i class="fal fa-plus"></i></a> </div>
 									<h3><a href="services-modification.html">Modification</a></h3>
 									<p>Modification d’équipements</p>
 								</div>
 							</div>
 							<div class="features__area-item swiper-slide"> <img src="assets/img/features-4.webp" alt="Réparation de pièce métallique" loading="lazy">
 								<div class="features__area-item-content">
-									<div class="features__area-item-content-icon"> <a href="services-reparation.html"><i class="fal fa-plus"></i></a> </div>
+									<div class="features__area-item-content-icon"> <a href="services-reparation.html" aria-label="Voir le service Réparation"><i class="fal fa-plus"></i></a> </div>
 									<h3><a href="services-reparation.html">Réparation</a></h3>
 									<p>Réparation et remise en service</p>
 								</div>
@@ -152,12 +164,12 @@
 
 	<!-- Features Area End -->
 	<!-- Services Area Start -->
-	<div class="services__area section-padding" data-background="assets/img/services.webp">
+	<div class="services__area mlv-mission section-padding">
 		<div class="container">
 			<div class="row mb-60">
 				<div class="col-xl-12">
 					<div class="services__area-title lg-t-center"> 
-						<span class="subtitle one">Notre mission</span>
+						<span class="subtitle one">Qui nous sommes</span>
 						<h2>Notre mission</h2> </div>
 				</div>
 			</div>
@@ -200,13 +212,13 @@
 
 	<!-- Features Area End -->
 	<!-- Services Area Start -->
-	<div class="services__area section-padding" data-background="assets/img/services.webp">
+	<div class="services__area mlv-services section-padding" data-background="assets/img/services.webp">
 		<div class="container">
 			<div class="row mb-60">
 				<div class="col-xl-12">
 					<div class="services__area-title lg-t-center"> 
-						<span class="subtitle one">Nos Services</span>
-						<h2>Nos Services</h2> </div>
+						<span class="subtitle one">Ce que nous faisons</span>
+						<h2>Nos services</h2> </div>
 				</div>
 			</div>
 			<div class="row">
@@ -290,6 +302,74 @@
 		</div>
 	</div>
 	<!-- Services Area End -->
+	<!-- Why Us Area Start -->
+	<div class="mlv-why section-padding">
+		<div class="container">
+			<div class="mlv-section-head">
+				<span class="subtitle">Pourquoi nous choisir</span>
+				<h2>Un partenaire industriel à votre mesure</h2>
+				<p>Une approche simple : comprendre votre besoin, fabriquer avec précision et livrer un travail durable.</p>
+			</div>
+			<div class="mlv-why__grid">
+				<article class="mlv-why__card">
+					<span class="mlv-why__icon"><i class="fas fa-drafting-compass" aria-hidden="true"></i></span>
+					<h3>Fabrication sur mesure</h3>
+					<p>Des pièces et structures réalisées selon vos plans, à l’unité ou en série.</p>
+				</article>
+				<article class="mlv-why__card">
+					<span class="mlv-why__icon"><i class="fas fa-tools" aria-hidden="true"></i></span>
+					<h3>Maintenance et réparation</h3>
+					<p>Diagnostic, soudage et remise en service pour limiter les temps d’arrêt.</p>
+				</article>
+				<article class="mlv-why__card">
+					<span class="mlv-why__icon"><i class="fas fa-ruler-combined" aria-hidden="true"></i></span>
+					<h3>Travail précis</h3>
+					<p>Une attention constante à la qualité, à la finition et au respect des délais.</p>
+				</article>
+				<article class="mlv-why__card">
+					<span class="mlv-why__icon"><i class="fas fa-handshake" aria-hidden="true"></i></span>
+					<h3>Accompagnement</h3>
+					<p>Un service personnalisé, de la première question jusqu’à la livraison.</p>
+				</article>
+			</div>
+		</div>
+	</div>
+	<!-- Why Us Area End -->
+
+<!-- Process Area Start -->
+	<div class="mlv-process section-padding">
+		<div class="container">
+			<div class="mlv-section-head">
+				<span class="subtitle">Notre processus</span>
+				<h2>De votre besoin à la livraison</h2>
+				<p>Un parcours clair, sans surprise, du premier échange jusqu’à la remise en service.</p>
+			</div>
+			<div class="mlv-process__grid">
+				<div class="mlv-process__step">
+					<span class="mlv-process__num">01</span>
+					<h3>Votre besoin</h3>
+					<p>Vous nous expliquez la pièce, le projet ou la panne à régler.</p>
+				</div>
+				<div class="mlv-process__step">
+					<span class="mlv-process__num">02</span>
+					<h3>Soumission</h3>
+					<p>Nous validons la solution, le délai et le prix avant de commencer.</p>
+				</div>
+				<div class="mlv-process__step">
+					<span class="mlv-process__num">03</span>
+					<h3>Réalisation</h3>
+					<p>Le travail est effectué en atelier ou directement sur votre site.</p>
+				</div>
+				<div class="mlv-process__step">
+					<span class="mlv-process__num">04</span>
+					<h3>Suivi</h3>
+					<p>Nous vérifions le résultat avec vous et assurons la remise en service.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Process Area End -->
+
 	<!-- Video Area Start -->
 	<div class="video__area" data-background="assets/img/video.webp">
 		<div class="container">
@@ -301,39 +381,77 @@
 		</div>
 	</div>
 	<!-- Video Area End -->
-	<!-- Footer Area Start -->
-	<div class="footer__area section-padding">
+	<!-- CTA Area Start -->
+	<div class="mlv-cta">
 		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-xl-7 col-lg-7">
-					<div class="footer__area-widget">
-						<div class="footer__area-widget-about lg-t-center">
-							<div class="footer__area-widget-about-logo">
-								<a href="index.html"><img src="assets/img/logo-1.webp" alt="Mécanique Luc Vallerand" loading="lazy"></a>
-							</div>
-							<div class="footer__area-widget-about-social">
-								<ul>
-									<li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
-									<li><a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a> </li>
-								</ul>
-							</div>
-							<div class="footer__area-widget-about-menu">
-								<ul>
-									<li><a href="index.html">Accueil</a></li>
-									<li><a href="services-tous.html">Services</a></li>
-									<li><a href="contact.html">Contact</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
+			<div class="mlv-cta__box">
+				<div>
+					<span class="subtitle">Un projet en tête ?</span>
+					<h2>Parlons de votre prochaine réalisation.</h2>
+					<p>Appelez-nous ou écrivez-nous pour discuter de votre besoin et obtenir une soumission.</p>
 				</div>
-				<div class="col-xl-5 col-lg-5">
-					
+				<div class="mlv-cta__actions">
+					<a href="contact.html" class="theme-btn-1">Demander une soumission</a>
+					<a href="tel:+14183134032" class="mlv-cta__phone"><i class="fas fa-phone" aria-hidden="true"></i> 418-313-4032</a>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- CTA Area End -->
+	<!-- Footer Area Start -->
+	<footer class="footer__area mlv-footer">
+		<div class="container">
+			<div class="mlv-footer__grid">
+				<div class="mlv-footer__brand">
+					<a href="index.html"><img src="assets/img/logo-1.webp" alt="Mécanique Luc Vallerand" loading="lazy"></a>
+					<p>Fabrication, maintenance industrielle et soudage sur mesure depuis 2019, à Saint-Honoré-de-Shenley.</p>
+					<div class="footer__area-widget-about-social">
+						<ul>
+							<li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+							<li><a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="mlv-footer__col">
+					<h3>Services</h3>
+					<ul>
+						<li><a href="services-decoupe.html">Découpe</a></li>
+						<li><a href="services-fabrication.html">Fabrication</a></li>
+						<li><a href="services-installation.html">Installation</a></li>
+						<li><a href="services-modification.html">Modification</a></li>
+						<li><a href="services-reparation.html">Réparation</a></li>
+					</ul>
+				</div>
+				<div class="mlv-footer__col">
+					<h3>Navigation</h3>
+					<ul>
+						<li><a href="index.html">Accueil</a></li>
+						<li><a href="services-tous.html">Tous nos services</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="mlv-footer__col mlv-footer__contact">
+					<h3>Nous joindre</h3>
+					<ul>
+						<li><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>524 rue Principale<br>Saint-Honoré-de-Shenley (Québec)<br>G0M 1V0</span></li>
+						<li><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+14183134032">418-313-4032</a></li>
+						<li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:mecaniquelucv@gmail.com">mecaniquelucv@gmail.com</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="mlv-footer__bottom">
+				<p>© 2026 Mécanique Luc Vallerand. Tous droits réservés.</p>
+				<p>Saint-Honoré-de-Shenley, Beauce (Québec)</p>
+			</div>
+		</div>
+	</footer>
 	<!-- Footer Area End -->
+	<!-- Mobile Call Bar Start -->
+	<a href="tel:+14183134032" class="mlv-callbar" aria-label="Appeler Mécanique Luc Vallerand au 418-313-4032">
+		<i class="fas fa-phone" aria-hidden="true"></i>
+		<span>Appeler au 418-313-4032</span>
+	</a>
+	<!-- Mobile Call Bar End -->
 	<!-- Scroll Btn Start -->
 	<div class="scroll-up scroll-one">
 		<svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">

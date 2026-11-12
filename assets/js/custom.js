@@ -164,33 +164,63 @@
 
 
 popup = {
+	lastFocus: null,
 	init: function () {
 		$('figure').click(function () {
 			popup.open($(this));
+		});
+
+		// Ouverture au clavier depuis les figures de galerie (Entrée ou Espace)
+		$('figure').on('keydown', function (event) {
+			if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
+				event.preventDefault();
+				popup.open($(this));
+			}
 		});
 
 		$(document).on('click', '.popup img', function () {
 			return false;
 		}).on('click', '.popup', function () {
 			popup.close();
-		})
+		}).on('keydown', function (event) {
+			if ((event.key === 'Escape' || event.key === 'Esc') && $('.popup').length) {
+				popup.close();
+			}
+		});
+
+		// Fermeture au clavier depuis le bouton de fermeture
+		$(document).on('keydown', '.popup .close', function (event) {
+			if (event.key === 'Enter' || event.key === ' ' || event.key === 'Spacebar') {
+				event.preventDefault();
+				popup.close();
+			}
+		});
 	},
 	open: function ($figure) {
+		if ($('.popup').length) {
+			return;
+		}
+		popup.lastFocus = $figure[0];
 		$('.gallery').addClass('pop');
-		$popup = $('<div class="popup" />').appendTo($('body'));
-		$fig = $figure.clone().appendTo($('.popup'));
+		$popup = $('<div class="popup" role="dialog" aria-modal="true" aria-label="Aperçu de la photo" />').appendTo($('body'));
+		$fig = $figure.clone().removeAttr('tabindex role aria-label').appendTo($('.popup'));
 		$bg = $('<div class="bg" />').appendTo($('.popup'));
-		$close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+		$close = $('<div class="close" role="button" tabindex="0" aria-label="Fermer la visionneuse"></div>').appendTo($fig);
 		$shadow = $('<div class="shadow" />').appendTo($fig);
 		src = $('img', $fig).attr('src');
 		$shadow.css({ backgroundImage: 'url(' + src + ')' });
 		$bg.css({ backgroundImage: 'url(' + src + ')' });
 		setTimeout(function () {
 			$('.popup').addClass('pop');
+			$('.popup .close').trigger('focus');
 		}, 10);
 	},
 	close: function () {
 		$('.gallery, .popup').removeClass('pop');
+		if (popup.lastFocus) {
+			$(popup.lastFocus).trigger('focus');
+			popup.lastFocus = null;
+		}
 		setTimeout(function () {
 			$('.popup').remove()
 		}, 100);
