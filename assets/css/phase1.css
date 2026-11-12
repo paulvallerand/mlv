@@ -836,6 +836,23 @@ textarea:focus-visible,
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.popup figure {
+  margin-top: 0 !important;
+  transform: translate(-50%, -50%) !important;
+  transform-origin: center center;
+  animation: none !important;
+  -webkit-animation: none !important;
+}
+
+.popup figure img {
+  display: block;
+  max-width: 92vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
 .popup figure figcaption {
   bottom: 0;
   padding: 70px 20px 20px;

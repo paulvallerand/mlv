@@ -99,7 +99,6 @@
 	<meta name="author" content="Mécanique Luc Vallerand">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Modification de pièces et structures métalliques | MLV</title>
-    <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNM9JC9YL7"></script>
 <script>
@@ -112,16 +111,12 @@
 
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" href="assets/img/favicon-1.png">
+	<!-- Préchargement de l'image de bannière -->
+	<link rel="preload" as="image" href="assets/img/banner.webp" fetchpriority="high">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!-- font awesome -->
 	<link rel="stylesheet" href="assets/css/all.css">
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<!-- Swiper -->
-	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-	<!-- Magnific -->
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<!-- Mean menu -->
 	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
 	<!-- Custom CSS -->
@@ -141,7 +136,7 @@
 		<div class="container custom-container">
 			<div class="header__area-box">
 				<div class="header__area-box-logo">
-					<a href="index.html" class="d-flex"> <img src="assets/img/logo-1.webp" alt="Mécanique Luc Vallerand" style="max-height:96px" loading="lazy"> <div class="title_mecanique d-flex" style="align-items: center;">Mécanique Luc Vallerand </div></a>
+					<a href="index.html" class="d-flex"> <img src="assets/img/logo-1.webp" alt="Mécanique Luc Vallerand" width="304" height="304" style="max-height:96px;width:auto;height:auto" decoding="async"> <div class="title_mecanique d-flex" style="align-items: center;">Mécanique Luc Vallerand </div></a>
 					<div class="responsive-menu"></div>
 				</div>
 				<div class="header__area-box-main-menu one meanmenu-responsive">
@@ -166,7 +161,7 @@
 	</div>
 	<!-- Header Area End -->
 	<!-- Banner Area Start -->
-	<div class="banner__area service-banner" data-background="assets/img/banner.webp">
+	<div class="banner__area service-banner" style="background-image:url('assets/img/banner.webp')">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
@@ -263,30 +258,30 @@
 <div class="gallery">
 
                 <figure tabindex="0" role="button" aria-label="Agrandir : Base de moteur Modification">
-                    <img src="images/modification/base moteur.jpg" alt="Base de moteur modifiée et renforcée" loading="lazy" style="max-height:60vh"/>
+                    <img src="images/modification/base-moteur.webp" srcset="images/modification/base-moteur-640.webp 640w, images/modification/base-moteur.webp 1024w" sizes="(max-width: 575px) 100vw, (max-width: 991px) 50vw, 33vw" alt="Base de moteur modifiée et renforcée" width="1024" height="768" loading="lazy" decoding="async">
                     <figcaption>Base de moteur <small>Modification</small></figcaption>
                 </figure>
 
 
                 <figure tabindex="0" role="button" aria-label="Agrandir : Remorque sur mesure Modification">
-                    <img src="images/modification/trailer.jpg" alt="Remorque métallique modifiée sur mesure" loading="lazy" style="max-height:60vh"/>
+                    <img src="images/modification/trailer.webp" srcset="images/modification/trailer-640.webp 640w, images/modification/trailer.webp 1024w" sizes="(max-width: 575px) 100vw, (max-width: 991px) 50vw, 33vw" alt="Remorque métallique modifiée sur mesure" width="1024" height="864" loading="lazy" decoding="async">
                     <figcaption>Remorque sur mesure <small>Modification</small></figcaption>
                 </figure>
 
 
 	                <figure tabindex="0" role="button" aria-label="Agrandir : Structure modifiée 2019">
-                    <img src="images/modification/20190823_160955.jpg" alt="Modification d’une structure métallique existante" loading="lazy" style="max-height:60vh"/>
+                    <img src="images/modification/20190823_160955.webp" srcset="images/modification/20190823_160955-640.webp 640w, images/modification/20190823_160955.webp 1024w" sizes="(max-width: 575px) 100vw, (max-width: 991px) 50vw, 33vw" alt="Modification d’une structure métallique existante" width="1024" height="768" loading="lazy" decoding="async">
                     <figcaption>Structure modifiée <small>2019</small></figcaption>
                 </figure>
 
                 <figure tabindex="0" role="button" aria-label="Agrandir : Broyeur industriel Modification">
-                    <img src="images/modification/broyeur.jpg" alt="Broyeur industriel modifié" loading="lazy" style="max-height:60vh"/>
+                    <img src="images/modification/broyeur.webp" srcset="images/modification/broyeur-640.webp 640w, images/modification/broyeur.webp 1024w" sizes="(max-width: 575px) 100vw, (max-width: 991px) 50vw, 33vw" alt="Broyeur industriel modifié" width="1024" height="1365" loading="lazy" decoding="async">
                     <figcaption>Broyeur industriel <small>Modification</small></figcaption>
                 </figure>
 
 
                 <figure tabindex="0" role="button" aria-label="Agrandir : Pièce adaptée Atelier MLV">
-                    <img src="images/modification/343228076_1220340588619177_5334263258491781785_n.jpg" alt="Pièce métallique adaptée et renforcée" loading="lazy" style="max-height:60vh"/>
+                    <img src="images/modification/343228076_1220340588619177_5334263258491781785_n.webp" srcset="images/modification/343228076_1220340588619177_5334263258491781785_n-640.webp 640w, images/modification/343228076_1220340588619177_5334263258491781785_n.webp 1024w" sizes="(max-width: 575px) 100vw, (max-width: 991px) 50vw, 33vw" alt="Pièce métallique adaptée et renforcée" width="1024" height="532" loading="lazy" decoding="async">
                     <figcaption>Pièce adaptée <small>Atelier MLV</small></figcaption>
                 </figure>
 
@@ -317,7 +312,7 @@
 		<div class="container">
 			<div class="mlv-footer__grid">
 				<div class="mlv-footer__brand">
-					<a href="index.html"><img src="assets/img/logo-1.webp" alt="Mécanique Luc Vallerand" loading="lazy"></a>
+					<a href="index.html"><img src="assets/img/logo-1.webp" alt="Mécanique Luc Vallerand" width="304" height="304" style="height:auto" loading="lazy" decoding="async"></a>
 					<p>Fabrication, maintenance industrielle et soudage sur mesure depuis 2019, à Saint-Honoré-de-Shenley.</p>
 					<div class="footer__area-widget-about-social">
 						<ul>
@@ -374,16 +369,6 @@
 	<!-- Scroll Btn End -->
 	<!-- Main JS -->
 	<script src="assets/js/jquery-3.7.0.min.js"></script>
-	<!-- Bootstrap JS -->
-	<script src="assets/js/bootstrap.min.js"></script>
-	<!-- Popper JS -->
-	<script src="assets/js/popper.min.js"></script>
-	<!-- Progressbar JS -->
-	<script src="assets/js/progressbar.min.js"></script>
-	<!-- Magnific JS -->
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<!-- Swiper JS -->
-	<script src="assets/js/swiper-bundle.min.js"></script>
 	<!-- Mean menu -->
 	<script src="assets/js/jquery.meanmenu.min.js"></script>
 	<!-- Custom JS -->

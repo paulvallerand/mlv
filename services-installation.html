@@ -99,7 +99,6 @@
 	<meta name="author" content="Mécanique Luc Vallerand">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Installation de structures métalliques | MLV</title>
-    <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNM9JC9YL7"></script>
 <script>
@@ -112,16 +111,12 @@
 
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" href="assets/img/favicon-1.png">
+	<!-- Préchargement de l'image de bannière -->
+	<link rel="preload" as="image" href="assets/img/banner.webp" fetchpriority="high">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!-- font awesome -->
 	<link rel="stylesheet" href="assets/css/all.css">
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<!-- Swiper -->
-	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-	<!-- Magnific -->
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<!-- Mean menu -->
 	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
 	<!-- Custom CSS -->
@@ -141,7 +136,7 @@
 		<div class="container custom-container">
 			<div class="header__area-box">
 				<div class="header__area-box-logo">
-					<a href="index.html" class="d-flex"> <img src="assets/img/logo-1.webp" alt="Mécanique Luc Vallerand" style="max-height:96px" loading="lazy"> <div class="title_mecanique d-flex" style="align-items: center;">Mécanique Luc Vallerand </div></a>
+					<a href="index.html" class="d-flex"> <img src="assets/img/logo-1.webp" alt="Mécanique Luc Vallerand" width="304" height="304" style="max-height:96px;width:auto;height:auto" decoding="async"> <div class="title_mecanique d-flex" style="align-items: center;">Mécanique Luc Vallerand </div></a>
 					<div class="responsive-menu"></div>
 				</div>
 				<div class="header__area-box-main-menu one meanmenu-responsive">
@@ -166,7 +161,7 @@
 	</div>
 	<!-- Header Area End -->
 	<!-- Banner Area Start -->
-	<div class="banner__area service-banner" data-background="assets/img/banner.webp">
+	<div class="banner__area service-banner" style="background-image:url('assets/img/banner.webp')">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
@@ -260,21 +255,21 @@
 <div class="gallery">
 
                 <figure tabindex="0" role="button" aria-label="Agrandir : Avant / après Installation">
-                    <img src="images/installation/avant apres 1.jpg" alt="Installation métallique — résultat avant et après" loading="lazy" style="max-height:60vh"/>
+                    <img src="images/installation/avant-apres-1.webp" srcset="images/installation/avant-apres-1-640.webp 640w, images/installation/avant-apres-1.webp 1024w" sizes="(max-width: 575px) 100vw, (max-width: 991px) 50vw, 33vw" alt="Installation métallique — résultat avant et après" width="1024" height="700" loading="lazy" decoding="async">
                     <figcaption>Avant / après <small>Installation</small></figcaption>
                 </figure>
 
 
 
                 <figure tabindex="0" role="button" aria-label="Agrandir : Structure installée Atelier MLV">
-                    <img src="images/installation/test.jpg" alt="Structure métallique installée sur le site du client" loading="lazy" style="max-height:60vh"/>
+                    <img src="images/installation/test.webp" srcset="images/installation/test-640.webp 640w, images/installation/test.webp 1024w" sizes="(max-width: 575px) 100vw, (max-width: 991px) 50vw, 33vw" alt="Structure métallique installée sur le site du client" width="1024" height="703" loading="lazy" decoding="async">
                     <figcaption>Structure installée <small>Atelier MLV</small></figcaption>
                 </figure>
 
 
 
                 <figure tabindex="0" role="button" aria-label="Agrandir : Travail sur site 2021">
-                    <img src="images/installation/20211230_111009.jpg" alt="Installation de pièces métalliques sur site" loading="lazy" style="max-height:60vh"/>
+                    <img src="images/installation/20211230_111009.webp" srcset="images/installation/20211230_111009-640.webp 640w, images/installation/20211230_111009.webp 1024w" sizes="(max-width: 575px) 100vw, (max-width: 991px) 50vw, 33vw" alt="Installation de pièces métalliques sur site" width="1024" height="768" loading="lazy" decoding="async">
                     <figcaption>Travail sur site <small>2021</small></figcaption>
                 </figure>
 
@@ -308,7 +303,7 @@
 		<div class="container">
 			<div class="mlv-footer__grid">
 				<div class="mlv-footer__brand">
-					<a href="index.html"><img src="assets/img/logo-1.webp" alt="Mécanique Luc Vallerand" loading="lazy"></a>
+					<a href="index.html"><img src="assets/img/logo-1.webp" alt="Mécanique Luc Vallerand" width="304" height="304" style="height:auto" loading="lazy" decoding="async"></a>
 					<p>Fabrication, maintenance industrielle et soudage sur mesure depuis 2019, à Saint-Honoré-de-Shenley.</p>
 					<div class="footer__area-widget-about-social">
 						<ul>
@@ -365,16 +360,6 @@
 	<!-- Scroll Btn End -->
 	<!-- Main JS -->
 	<script src="assets/js/jquery-3.7.0.min.js"></script>
-	<!-- Bootstrap JS -->
-	<script src="assets/js/bootstrap.min.js"></script>
-	<!-- Popper JS -->
-	<script src="assets/js/popper.min.js"></script>
-	<!-- Progressbar JS -->
-	<script src="assets/js/progressbar.min.js"></script>
-	<!-- Magnific JS -->
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<!-- Swiper JS -->
-	<script src="assets/js/swiper-bundle.min.js"></script>
 	<!-- Mean menu -->
 	<script src="assets/js/jquery.meanmenu.min.js"></script>
 	<!-- Custom JS -->
