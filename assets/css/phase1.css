@@ -598,7 +598,7 @@ textarea:focus-visible,
   height: 42px;
   margin-bottom: 18px;
   border-radius: 50%;
-  background: var(--mlv-orange);
+  background: var(--mlv-orange-dark);
   color: #fff;
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;

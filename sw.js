@@ -9,7 +9,6 @@ const ASSETS = [
   '/assets/sass/style.css',
   '/assets/css/phase1.css',
   '/assets/css/phase2.css',
-  '/assets/js/jquery-3.7.0.min.js',
   '/assets/js/custom.js',
   '/assets/img/logo-1.webp',
   '/assets/img/banner.webp',
