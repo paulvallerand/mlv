@@ -1,0 +1,32 @@
+{
+  "name": "Mécanique Luc Vallerand",
+  "short_name": "MLV",
+  "description": "Fabrication, soudage et maintenance industrielle sur mesure à Saint-Honoré-de-Shenley.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#030404",
+  "theme_color": "#F94D1D",
+  "lang": "fr-CA",
+  "icons": [
+    {
+      "src": "assets/img/icon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/img/icon/icon-192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "assets/img/icon/icon-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

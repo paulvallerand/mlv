@@ -373,6 +373,34 @@ popup = {
 	}
 }
 
+
+// MOB-26 : evenements GA4 mobile
+(function () {
+  if (typeof gtag !== 'function') return;
+  var tracked = { 25: false, 50: false, 75: false, 100: false };
+  function trackScroll() {
+    var h = document.documentElement;
+    var scrolled = (h.scrollTop + window.innerHeight) / h.scrollHeight * 100;
+    for (var t of [25, 50, 75, 100]) {
+      if (!tracked[t] && scrolled >= t) {
+        tracked[t] = true;
+        gtag('event', 'scroll_depth', { percent: t, transport_type: 'beacon' });
+      }
+    }
+  }
+  window.addEventListener('scroll', trackScroll, { passive: true });
+
+  var start = Date.now();
+  window.addEventListener('pagehide', function () {
+    var seconds = Math.round((Date.now() - start) / 1000);
+    gtag('event', 'temps_sur_page', { seconds: seconds, transport_type: 'beacon' });
+  });
+
+  $(document).on('click', '.mean-nav a', function () {
+    gtag('event', 'clic_menu_mobile', { link_url: $(this).attr('href') || '', transport_type: 'beacon' });
+  });
+})();
+
 popup.init()
 
 // Service worker (cache offline) — enregistrement différé

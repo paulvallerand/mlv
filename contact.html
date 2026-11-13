@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -63,6 +63,14 @@
   gtag('config', 'G-TNM9JC9YL7');
 </script>
 
+	<!-- Meta mobile / PWA -->
+	<meta name="theme-color" content="#F94D1D">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-title" content="Mécanique Luc Vallerand">
+	<link rel="apple-touch-icon" href="assets/img/icon/apple-touch-icon.png">
+	<link rel="manifest" href="manifest.webmanifest">
+	<link rel="apple-touch-startup-image" href="assets/img/splash-1170x2532.png" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)">
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" href="assets/img/favicon-1.png">
 	<!-- Préchargement de l'image de bannière -->
@@ -153,6 +161,52 @@
 		</div>
 	</div>
 	<!-- Banner Area End -->
+
+		<!-- Contact Area Start -->
+	<section class="mlv-contact section-padding" style="background:#121717;">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 col-lg-6">
+					<div class="mlv-contact__info">
+						<h2>Parlons de votre projet</h2>
+						<p>Appelez-nous ou ecrivez-nous pour valider votre besoin et obtenir une soumission. Nous repondons rapidement.</p>
+						<ul class="mlv-contact__list">
+							<li><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>524 rue Principale<br>Saint-Honore-de-Shenley (Quebec)<br>G0M 1V0</span></li>
+							<li><i class="fas fa-phone" aria-hidden="true"></i><a href="tel:+14183134032">418-313-4032</a></li>
+							<li><i class="fas fa-envelope" aria-hidden="true"></i><a href="mailto:mecaniquelucv@gmail.com">mecaniquelucv@gmail.com</a></li>
+						</ul>
+						<p><a class="theme-btn-1" href="https://www.google.com/maps/search/?api=1&query=524+rue+Principale+Saint-Honore-de-Shenley+QC+G0M+1V0" target="_blank" rel="noopener">Itineraire Google Maps</a></p>
+						<p class="mlv-contact__hours"><strong>Heures d'ouverture :</strong> a confirmer avec l'atelier.<br><strong>Zone desservie :</strong> Beauce et Chaudiere-Appalaches (a confirmer).</p>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6">
+					<form class="mlv-contact__form" action="https://formspree.io/f/VOTRE_ID" method="POST">
+						<h3>Demande de soumission</h3>
+						<label for="mlv-name">Nom</label>
+						<input id="mlv-name" name="name" type="text" required autocomplete="name">
+						<label for="mlv-email">Courriel</label>
+						<input id="mlv-email" name="email" type="email" required autocomplete="email" inputmode="email">
+						<label for="mlv-phone">Telephone</label>
+						<input id="mlv-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+						<label for="mlv-service">Service</label>
+						<select id="mlv-service" name="service">
+							<option value="">Choisir un service</option>
+							<option value="decoupe">Decoupe</option>
+							<option value="fabrication">Fabrication</option>
+							<option value="installation">Installation</option>
+							<option value="modification">Modification</option>
+							<option value="reparation">Reparation</option>
+						</select>
+						<label for="mlv-message">Votre besoin</label>
+						<textarea id="mlv-message" name="message" rows="5" required></textarea>
+						<button type="submit" class="theme-btn-1">Envoyer la demande</button>
+						<p class="mlv-contact__note">Remplacer VOTRE_ID par l'identifiant Formspree (ou utiliser un autre service).</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact Area End -->
 
 	<!-- Footer Area Start -->
 	<footer class="footer__area mlv-footer">

@@ -1379,3 +1379,34 @@ a, button, .theme-btn-1, .mlv-callbar, .scroll-up, .popup-nav, .close {
     transition: none !important;
   }
 }
+
+/* MOB-18 à MOB-20 : contact */
+.mlv-contact__info h2 { margin-bottom: 12px; }
+.mlv-contact__list { list-style: none; padding: 0; margin: 20px 0; }
+.mlv-contact__list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; color: #CFD0D0; }
+.mlv-contact__list i { color: #F94D1D; margin-top: 4px; }
+.mlv-contact__list a { color: #fff; }
+.mlv-contact__hours { color: #9FA0A1; font-size: 14px; margin-top: 16px; }
+.mlv-contact__note { font-size: 12px; color: #9FA0A1; margin-top: 10px; }
+
+.mlv-contact__form {
+  background: #0F1212;
+  padding: 28px 24px;
+  border-radius: 8px;
+}
+.mlv-contact__form h3 { margin-bottom: 16px; }
+.mlv-contact__form label { display: block; margin: 12px 0 4px; font-size: 14px; color: #CFD0D0; }
+.mlv-contact__form input,
+.mlv-contact__form select,
+.mlv-contact__form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #2a2f2f;
+  border-radius: 6px;
+  background: #030404;
+  color: #fff;
+  min-height: 44px;
+}
+.mlv-contact__form textarea { resize: vertical; }
+.mlv-contact__form button { margin-top: 16px; width: 100%; }
