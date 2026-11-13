@@ -402,29 +402,6 @@ popup = {
 })();
 
 
-// LIB-02 : video via dialog natif (remplace Magnific Popup)
-;(function () {
-  var btn = document.querySelector('.video-popup');
-  var dialog = document.getElementById('video-dialog');
-  var frame = document.getElementById('video-frame');
-  if (!btn || !dialog || !frame) return;
-  var src = btn.getAttribute('data-video');
-  btn.addEventListener('click', function () {
-    dialog.hidden = false;
-    void dialog.offsetHeight;
-    frame.src = src;
-  });
-  var closeBtn = dialog.querySelector('.video-dialog__close');
-  function closeVideo() {
-    frame.src = 'about:blank';
-    dialog.hidden = true;
-  }
-  if (closeBtn) closeBtn.addEventListener('click', closeVideo);
-  dialog.addEventListener('click', function (e) {
-    if (e.target === dialog) closeVideo();
-  });
-})();
-
 popup.init()
 
 // Service worker (cache offline) — enregistrement différé
