@@ -1410,3 +1410,64 @@ a, button, .theme-btn-1, .mlv-callbar, .scroll-up, .popup-nav, .close {
 }
 .mlv-contact__form textarea { resize: vertical; }
 .mlv-contact__form button { margin-top: 16px; width: 100%; }
+
+/* LIB-02 : dialog video natif */
+.video-dialog[hidden] {
+  display: none !important;
+}
+
+.video-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(3, 4, 4, 0.85);
+  border: 0;
+  padding: 0;
+  margin: 0;
+  max-width: none;
+  max-height: none;
+  width: 100%;
+  height: 100%;
+}
+
+
+.video-dialog__inner {
+  position: relative;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-dialog__inner iframe {
+  display: block;
+  width: 90vw;
+  max-width: 960px;
+  height: 50.625vw;
+  max-height: 540px;
+  border: 0;
+}
+
+.video-dialog__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 22px;
+  line-height: 36px;
+  cursor: pointer;
+}
+
+/* LIB-02 : laisser les clics passer a travers l'animation pulse */
+.video-pulse::before,
+.video-pulse::after {
+  pointer-events: none !important;
+}

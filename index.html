@@ -88,8 +88,6 @@
 	<link rel="stylesheet" href="assets/css/all.css">
 	<!-- Swiper -->
 	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-	<!-- Magnific -->
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<!-- Mean menu -->
 	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
 	<!-- Custom CSS -->
@@ -435,7 +433,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
-					<div class="video__area-play-icon video-pulse"> <a class="video-popup" href="https://www.youtube.com/embed/k8x2J3vZwwg" aria-label="Lire la vidéo de présentation"><i class="fas fa-play" aria-hidden="true"></i></a> </div>
+					<div class="video__area-play-icon video-pulse"> <button type="button" class="video-popup" data-video="https://www.youtube.com/embed/k8x2J3vZwwg" aria-label="Lire la vidéo de présentation"><i class="fas fa-play" aria-hidden="true"></i></button> </div>
+					<div id="video-dialog" class="video-dialog" role="dialog" aria-modal="true" aria-label="Vidéo de présentation" hidden><div class="video-dialog__inner"><button type="button" class="video-dialog__close" aria-label="Fermer la vidéo">&times;</button><iframe id="video-frame" width="560" height="315" src="about:blank" title="Vidéo de présentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
 				</div>
 			</div>
 		</div>
@@ -553,8 +552,6 @@
 	<!-- Scroll Btn End -->
 	<!-- Main JS -->
 	<script src="assets/js/jquery-3.7.0.min.js" defer></script>
-	<!-- Magnific JS -->
-	<script src="assets/js/jquery.magnific-popup.min.js" defer></script>
 	<!-- Swiper JS -->
 	<script src="assets/js/swiper-bundle.min.js" defer></script>
 	<!-- Mean menu -->
