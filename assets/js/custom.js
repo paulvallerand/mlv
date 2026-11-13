@@ -32,7 +32,7 @@
 			meanMenuContainer: '.responsive-menu',
 			meanScreenWidth: '991',
 			meanMenuOpen: '<span></span><span></span><span></span>',
-			meanMenuClose: '<i class="fal fa-times"></i>'
+			meanMenuClose: '<i class="fas fa-xmark"></i>'
 		});
 		// Accessibilité : libellé du bouton hamburger
 		$('.meanmenu-reveal').attr('aria-label', 'Ouvrir le menu de navigation').attr('aria-expanded', 'false');
@@ -79,18 +79,18 @@
 	$('.toggle-menu ul').hide();
 	$(".toggle-menu a").click(function() {
 		$(this).parent(".toggle-menu").children("ul").slideToggle("100");
-		$(this).find(".change").toggleClass("fal fa-angle-up fal fa-angle-down");
+		$(this).find(".change").toggleClass("fas fa-angle-up fas fa-angle-down");
 	});
 	/*========== FAQ  ==========*/
 	$(".faq-item-card-header").click(function() {
 		if($(this).next(".faq-item-card-header-content").hasClass("active")) {
 			$(this).next(".faq-item-card-header-content").removeClass("active").slideUp()
-			$(this).children("i").removeClass("fal fa-angle-up").addClass("fal fa-angle-down")
+			$(this).children("i").removeClass("fas fa-angle-up").addClass("fas fa-angle-down")
 		} else {
 			$(".faq-item-card-header-content").removeClass("active").slideUp()
-			$(".faq-item-card .faq-item-card-header i").removeClass("fal fa-angle-up").addClass("fal fa-angle-down");
+			$(".faq-item-card .faq-item-card-header i").removeClass("fas fa-angle-up").addClass("fas fa-angle-down");
 			$(this).next(".faq-item-card-header-content").addClass("active").slideDown()
-			$(this).children("i").removeClass("fal fa-angle-down").addClass("fal fa-angle-up")
+			$(this).children("i").removeClass("fas fa-angle-down").addClass("fas fa-angle-up")
 		}
 	});
 	/*==========  video-popup  ==========*/
