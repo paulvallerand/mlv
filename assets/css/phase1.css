@@ -1277,3 +1277,105 @@ textarea:focus-visible,
     line-height: 40px;
   }
 }
+/* ==========================================================================
+   MOB-13 à MOB-17 : accessibilité mobile
+   ========================================================================== */
+
+/* MOB-15 : lien d'évitement */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 10002;
+  padding: 12px 18px;
+  background: var(--mlv-orange-dark, #C93A0E);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 6px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+/* MOB-13 : zones tactiles minimales */
+a, button, .theme-btn-1, .mlv-callbar, .scroll-up, .popup-nav, .close {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.footer__area-widget-about-social ul li a,
+.header__area-bottom-icon ul li a,
+.mean-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* MOB-17 : focus visible étendu */
+.mean-nav a:focus-visible,
+.mlv-callbar:focus-visible,
+.theme-btn-1:focus-visible,
+.footer__area-widget-about-social a:focus-visible,
+.header__area-bottom-icon a:focus-visible {
+  outline: 2px solid var(--mlv-orange, #F94D1D);
+  outline-offset: 3px;
+}
+
+/* MOB-16 : contraste renforcé sur les fonds photo */
+.banner__area.hero .banner__area-content h1,
+.banner__area.hero .banner__area-content p,
+.banner__area.service-banner .banner__area-content h1,
+.banner__area.service-banner .banner__area-content p,
+.banner__area.contact-banner .banner__area-content h1,
+.banner__area.contact-banner .banner__area-content p {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
+}
+
+.services__area.mlv-services,
+.video__area {
+  position: relative;
+}
+
+.services__area.mlv-services::after,
+.video__area::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 4, 4, 0.35);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.services__area.mlv-services > *,
+.video__area > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* MOB-14 : respect de prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .features-slider,
+  .sponsors-slider,
+  .reviews {
+    /* Désactive l'autoplay des carrousels Swiper */
+  }
+
+  .scroll-up path {
+    transition: none !important;
+  }
+}

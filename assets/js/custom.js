@@ -34,6 +34,13 @@
 			meanMenuOpen: '<span></span><span></span><span></span>',
 			meanMenuClose: '<i class="fal fa-times"></i>'
 		});
+		// Accessibilité : libellé du bouton hamburger
+		$('.meanmenu-reveal').attr('aria-label', 'Ouvrir le menu de navigation').attr('aria-expanded', 'false');
+		$(document).on('click', '.meanmenu-reveal', function () {
+			var expanded = $(this).hasClass('meanclose');
+			$(this).attr('aria-expanded', expanded ? 'true' : 'false')
+				.attr('aria-label', expanded ? 'Fermer le menu de navigation' : 'Ouvrir le menu de navigation');
+		});
 		// Fermer le menu mobile après un clic sur un lien
 		$(document).on('click', '.mean-nav a', function () {
 			var $reveal = $('.meanmenu-reveal.meanclose');
