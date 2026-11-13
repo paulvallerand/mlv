@@ -492,11 +492,11 @@ textarea:focus-visible,
   background: var(--mlv-orange);
 }
 
-.mlv-services .services__area-item-content h4 {
+.mlv-services .services__area-item-content h3 {
   font-size: 22px;
 }
 
-.mlv-services .services__area-item-content h4 a:hover {
+.mlv-services .services__area-item-content h3 a:hover {
   color: var(--mlv-orange);
 }
 
