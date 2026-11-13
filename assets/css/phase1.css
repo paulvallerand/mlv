@@ -3,7 +3,7 @@
    Feuille de surcharges chargée après assets/sass/style.css
    ========================================================================== */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+/* Police Inter chargée via <link> dans le HTML (voir index.html) pour éviter le rendu bloquant. */
 
 :root {
   --mlv-orange: #f94d1d;

@@ -7,8 +7,7 @@ Color
 /*==========================================================================
 Common Css
 ==========================================================================*/
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+/* Polices Google chargées via <link> dans le HTML (voir index.html) pour éviter le rendu bloquant. */
 body {
   font-family: "Inter", sans-serif;
   color: #CFD0D0;
