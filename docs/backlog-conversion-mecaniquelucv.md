@@ -35,22 +35,24 @@ Audit du dépôt au 14 novembre 2026, complété par l'analyse de conversion.
 | Téléphone cliquable | Présent partout (`tel:+14183134032`) | — |
 | Bouton d'appel fixe mobile | `.mlv-callbar` sous 991 px (MOB-09 ✅) | Déjà en place |
 | Formulaire | Nom, courriel, téléphone, service, message | Pas de photos, ni délai souhaité, ni case urgence |
-| Réassurance sous le bouton | Absente | « Soumission gratuite » / délai non confirmés |
+| Réassurance sous le bouton | Absente | Aucune promesse de gratuité ou de délai; bloc de 3 faits validés sous les CTA (C1-04) |
+| Parcours d'urgence | Absent | Encart neutre « Panne ou bris ? » sur Contact, avec le téléphone en premier (C2-05) |
+| FAQ de conversion | 3 questions par page de service | 5 par page de service, 4 sur l'accueil, 5 sur Contact (C4-06) |
 | Message de confirmation | Aucune page ni message local prévu | Dépend du comportement Formspree |
 | Témoignages / avis | Aucun | À collecter (P4-01, P4-04) |
 | Note Google | Absente | Dépend de la fiche GBP (P4-03) |
 | Photos de Luc / de l'atelier | Absentes | Analyse : le visage absent = frein de confiance |
-| Légendes des projets | « Fabrication sur mesure », « Avant / après », « Installation sur site » | Génériques, sans problème ni résultat |
-| Lien « Voir toutes les réalisations » | Pointe vers `services-fabrication.html` | Aucune galerie dédiée (`realisations.html` absente) |
+| Légendes des projets | Titre en gras + contexte (travail, résultat) | Réécrites sur l'accueil (C3-01) |
+| Lien « Voir toutes les réalisations » | Pointe vers `services-fabrication.html` | Renommé « Voir nos services de fabrication » (C3-02); galerie dédiée toujours absente |
 | Pages Soudage et Maintenance industrielle | Absentes | Services pourtant confirmés dans la fiche |
 | Matériaux et capacités (Fabrication) | Non précisés | Acier/aluminium mentionnés sur l'accueil et en meta de Découpe, statut 🟡 |
-| Mentions de délais | « respect des délais », « délais respectés », « meilleurs délais » | À valider ou reformuler (voir C0-07) |
-| Images dupliquées | `features-4.webp` sert Découpe et Réparation ; `services-4.png` sert Modification et Réparation | Confirmé dans `index.html` et `services-tous.html` |
+| Mentions de délais | Reformulées sans promesse (accueil, meta Découpe/Fabrication, Réparation) | C0-07 terminé |
+| Images dupliquées | `features-4.webp` → `images/réparation/os1.webp` pour Réparation; `services-4.png` sert encore Modification et Réparation | Image corrigée; icônes : décision documentée (C3-04) |
 | Courriel | `mecaniquelucv@gmail.com` | Adresse de domaine à décider (C0-05) |
 | Public cible | Mission : particuliers, entrepreneurs, entreprises industrielles ; H1 : mécanique industrielle | Positionnement à clarifier |
 | Territoire | Beauce, Chaudière-Appalaches et région de Québec ; rayon de 200 km ou plus | Cohérence à rappeler sur Contact et les services |
-| Suivi GA4 | Événements `appel_telephone`, `courriel`, `demande_soumission`, `clic_service` codés | Reste à marquer les conversions dans GA4 (C5-01) |
-| Pages non analysées | Découpe, Installation, Modification, Réparation | Analyse de conversion à étendre (C0-06) |
+| Suivi GA4 | `appel_telephone`, `courriel`, `demande_soumission`, `clic_service`, `formulaire_envoye` codés | Reste à marquer les conversions dans GA4 (C5-01, annexe D) |
+| Pages non analysées | Aucune | Découpe, Installation, Modification et Réparation analysées (C0-06) |
 
 ---
 
@@ -68,10 +70,10 @@ Audit du dépôt au 14 novembre 2026, complété par l'analyse de conversion.
   - *Critère :* autorisation écrite ou courriel conservé pour chaque photo publiée.
 - [ ] **C0-05 — Trancher l'adresse courriel professionnelle** : conserver Gmail ou passer à `@mecaniquelucv.com`. **Effort : S.**
   - *Critère :* décision du propriétaire ; si changement, redirection et mise à jour du NAP, du JSON-LD et de Formspree.
-- [ ] **C0-06 — Étendre l'analyse de conversion aux 4 pages non analysées** (Découpe, Installation, Modification, Réparation). **Effort : S.**
-  - *Critère :* mêmes critères que l'analyse initiale : preuves, urgence, formulaire/CTA, contexte des réalisations.
-- [ ] **C0-07 — Vérifier et reformuler les mentions de délais** : meta de Découpe (« délais respectés »), meta de Fabrication (« respect des délais »), accueil (« respect des délais »), Réparation (« meilleurs délais »). **Effort : S.**
-  - *Critère :* chaque mention est soit validée, soit remplacée par une formulation factuelle. Aucune promesse de rapidité non confirmée.
+- [x] **C0-06 — Étendre l'analyse de conversion aux 4 pages non analysées** (Découpe, Installation, Modification, Réparation). **Effort : S.**
+  - *Critère :* mêmes critères que l'analyse initiale : preuves, urgence, formulaire/CTA, contexte des réalisations. ✅ (section « Analyse des quatre pages de service restantes » ajoutée à l'analyse).
+- [x] **C0-07 — Vérifier et reformuler les mentions de délais** : meta de Découpe (« délais respectés »), meta de Fabrication (« respect des délais »), accueil (« respect des délais »), Réparation (« meilleurs délais »). **Effort : S.**
+  - *Critère :* chaque mention est soit validée, soit remplacée par une formulation factuelle. Aucune promesse de rapidité non confirmée. ✅ (meta Découpe et Fabrication, carte « Travail précis » de l'accueil, description JSON-LD et introduction de Réparation).
 
 ---
 
@@ -83,8 +85,8 @@ Audit du dépôt au 14 novembre 2026, complété par l'analyse de conversion.
   - *Critère :* chiffres exacts au moment de la publication, lien valide, mise à jour prévue.
 - [ ] **C1-03 — Ajouter une photo de Luc et une photo de l'atelier** sur l'accueil et/ou la page À propos. **Effort : M.** *(dépend de C0-04)*
   - *Critère :* photos originales, `alt` descriptif, poids optimisé (WebP), autorisation.
-- [ ] **C1-04 — Ajouter un bloc de réassurance sous les CTA** avec 3 faits validés maximum. **Effort : S.**
-  - *Critère :* uniquement des faits confirmés (ex. « Atelier ou sur site », « Lun.–ven. 7 h–19 h », « Beauce, Chaudière-Appalaches et région de Québec »). Pas de « 24 h » ni de « gratuit » sans validation.
+- [x] **C1-04 — Ajouter un bloc de réassurance sous les CTA** avec 3 faits validés maximum. **Effort : S.**
+  - *Critère :* uniquement des faits confirmés (ex. « Atelier ou sur site », « Lun.–ven. 7 h–19 h », « Beauce, Chaudière-Appalaches et région de Québec »). Pas de « 24 h » ni de « gratuit » sans validation. ✅ (`ul.mlv-reassurance` sous les CTA de l'accueil, des 5 pages de service et de Services; l'accueil avait déjà `hero__trust`).
 - [ ] **C1-05 — Clarifier la cible et le territoire** dans la mission et l'introduction : pour qui (particuliers, PME, industriels), où (Beauce et 200 km), comment (atelier ou sur site). **Effort : M.** *(dépend de P1-03)*
   - *Critère :* un visiteur comprend en 10 secondes s'il est concerné ; aucune contradiction avec le H1.
 - [ ] **C1-06 — Renforcer le CTA secondaire** actuellement « Vérifier la couverture de votre secteur ». **Effort : S.**
@@ -105,8 +107,8 @@ Audit du dépôt au 14 novembre 2026, complété par l'analyse de conversion.
   - *Critère :* texte exact, aucune donnée non validée, lisible sur mobile.
 - [ ] **C2-04 — Prévoir un message de confirmation clair et un message d'erreur**. **Effort : S.**
   - *Critère :* après envoi, le visiteur sait que sa demande est reçue ; en cas d'échec, il est invité à appeler ou écrire.
-- [ ] **C2-05 — Rendre l'urgence visible sur Contact** : bloc « Panne ou bris ? » avec le numéro de téléphone en premier. **Effort : S.** *(dépend de C0-02)*
-  - *Critère :* affiché uniquement si la disponibilité réelle est confirmée ; sinon, formulation neutre sans promesse.
+- [x] **C2-05 — Rendre l'urgence visible sur Contact** : bloc « Panne ou bris ? » avec le numéro de téléphone en premier. **Effort : S.** *(dépend de C0-02)*
+  - *Critère :* affiché uniquement si la disponibilité réelle est confirmée ; sinon, formulation neutre sans promesse. ✅ (encart neutre `mlv-urgence` : appel + heures d'ouverture, aucune promesse de délai ni d'urgence hors horaires).
 - [x] **C2-06 — Vérifier l'accessibilité du formulaire** : libellés associés, hauteur minimale de 44 px, `autocomplete`. **Effort : S.**
   - *Critère :* champs étiquetés, utilisables au clavier, rendu correct à 390 px. ✅ (état actuel ; à revalider après ajout des champs C2-01/C2-02).
 - [ ] **C2-07 — Refaire un test d'envoi complet** après modification du formulaire. **Effort : S.**
@@ -116,19 +118,19 @@ Audit du dépôt au 14 novembre 2026, complété par l'analyse de conversion.
 
 ## Phase 3 — Réalisations et contexte
 
-- [ ] **C3-01 — Réécrire les légendes des 3 projets de l'accueil** : problème, travail réalisé, résultat. **Effort : S.**
-  - *Critère :* chaque légende apporte une information concrète, sans matériau ni délai non confirmé.
-- [ ] **C3-02 — Corriger le lien « Voir toutes les réalisations »**. **Effort : S.** *(dépend de P3-02)*
+- [x] **C3-01 — Réécrire les légendes des 3 projets de l'accueil** : problème, travail réalisé, résultat. **Effort : S.**
+  - *Critère :* chaque légende apporte une information concrète, sans matériau ni délai non confirmé. ✅ (titre en gras + une phrase de contexte; styles `.mlv-project` ajoutés).
+- [x] **C3-02 — Corriger le lien « Voir toutes les réalisations »**. **Effort : S.** *(dépend de P3-02)*
   - Option A : créer `realisations.html` et y pointer.
   - Option B : renommer le lien en « Voir nos services de fabrication » tant que la galerie n'existe pas.
-  - *Critère :* le libellé correspond exactement à la destination ; aucun lien trompeur.
+  - *Critère :* le libellé correspond exactement à la destination ; aucun lien trompeur. ✅ (option B appliquée : `realisations.html` n'existe pas encore).
 - [ ] **C3-03 — Rédiger 3 études de cas courtes** (une par service prioritaire). **Effort : L.** *(doublon de P3-03 à P3-05)*
   - Gabarit : besoin → intervention → matériaux/procédés confirmés → résultat → photo avant/après → service lié.
   - *Critère :* contenu réel, autorisation client si nommé, photos originales légendées.
-- [ ] **C3-04 — Remplacer les images et icônes dupliquées** : `features-4.webp` (Découpe/Réparation) et `services-4.png` (Modification/Réparation). **Effort : S.**
-  - *Critère :* chaque service a une image et une icône distinctes, ou une décision documentée de les conserver.
-- [ ] **C3-05 — Ajouter du contexte technique aux galeries de service** : légende courte (pièce, usage, intervention). **Effort : M.** *(dépend de C0-03)*
-  - *Critère :* au moins une légende contextualisée par page, sans divulgation d'information client non autorisée.
+- [x] **C3-04 — Remplacer les images et icônes dupliquées** : `features-4.webp` (Découpe/Réparation) et `services-4.png` (Modification/Réparation). **Effort : S.**
+  - *Critère :* chaque service a une image et une icône distinctes, ou une décision documentée de les conserver. ✅ image de Réparation remplacée par `images/réparation/os1.webp`. **Décision documentée pour les icônes** : le jeu ne contient que 4 paires (`services-1` à `services-4`) pour 5 services ; `services-4/44` reste utilisé pour Modification et Réparation jusqu'à la commande d'une icône dédiée (voir C4-01/C4-02).
+- [x] **C3-05 — Ajouter du contexte technique aux galeries de service** : légende courte (pièce, usage, intervention). **Effort : M.** *(dépend de C0-03)*
+  - *Critère :* au moins une légende contextualisée par page, sans divulgation d'information client non autorisée. ✅ (une légende enrichie sur chacune des 5 pages de service, sans matériau non confirmé).
 
 ---
 
@@ -144,8 +146,8 @@ Audit du dépôt au 14 novembre 2026, complété par l'analyse de conversion.
   - *Critère :* liens cohérents sur toutes les pages, aucun lien mort, rendu mobile vérifié.
 - [ ] **C4-05 — Créer des pages locales** (« Soudeur à Saint-Georges », « Fabrication métallique à Thetford Mines », etc.). **Effort : L (récurrent).** *(dépend de C0-01 et de la stratégie P0-02)*
   - *Critère :* chaque page contient de l'information réellement distincte (interventions, photos, témoignages locaux). Pas de duplication de texte entre villes.
-- [ ] **C4-06 — Étendre la FAQ conversion** à toutes les pages : prix/soumission, délais (si confirmés), urgence, matériaux, déplacement. **Effort : M.** *(recoupe P5-01)*
-  - *Critère :* 5 à 7 questions par page, réponses courtes et factuelles, JSON-LD `FAQPage` synchronisé.
+- [x] **C4-06 — Étendre la FAQ conversion** à toutes les pages : prix/soumission, délais (si confirmés), urgence, matériaux, déplacement. **Effort : M.** *(recoupe P5-01)*
+  - *Critère :* 5 à 7 questions par page, réponses courtes et factuelles, JSON-LD `FAQPage` synchronisé. ✅ 5 questions par page de service et sur Services, 4 sur l'accueil, 5 sur Contact; seules les données validées sont utilisées (heures, déplacement facturé, processus de soumission).
 
 ---
 
@@ -153,6 +155,7 @@ Audit du dépôt au 14 novembre 2026, complété par l'analyse de conversion.
 
 - [ ] **C5-01 — Marquer les conversions clés dans GA4** : `appel_telephone`, `courriel`, `demande_soumission`. **Effort : S.**
   - *Critère :* événements visibles dans GA4 et marqués comme conversions ; un clic de test est bien compté.
+  - 🟡 **Côté site terminé** : événement `formulaire_envoye` ajouté à l'envoi du formulaire Formspree (service inclus), en plus des événements existants. **Reste l'action dans l'interface GA4** (voir annexe D) : elle demande un accès au compte GA4 et ne peut pas être faite depuis le dépôt.
 - [ ] **C5-02 — Suivre les appels et les soumissions par source** : campagne GBP, pages de service, pages locales. **Effort : M.**
   - *Critère :* au moins un paramètre de source ou un rapport GA4 permet de distinguer les origines.
 - [ ] **C5-03 — Revue à 30 / 60 / 90 jours** : comparer clics d'appel, envois de formulaire et pages d'entrée. **Effort : S (récurrent).** *(recoupe P6-05)*
@@ -171,33 +174,33 @@ Audit du dépôt au 14 novembre 2026, complété par l'analyse de conversion.
 | C0-03 | Matériaux, procédés, capacités | Critique | S | P0-01 | ☐ |
 | C0-04 | Autorisations photos | Critique | S | — | ☐ |
 | C0-05 | Courriel professionnel | Moyenne | S | — | ☐ |
-| C0-06 | Analyser les 4 pages restantes | Élevée | S | — | ☐ |
-| C0-07 | Mentions de délais | Élevée | S | — | ☐ |
+| C0-06 | Analyser les 4 pages restantes | Élevée | S | — | ✅ |
+| C0-07 | Mentions de délais | Élevée | S | — | ✅ |
 | C1-01 | Témoignages | Élevée | M | C0-01, P4-01 | ☐ |
 | C1-02 | Note Google + avis | Élevée | S | P4-03, P4-04, P4-08 | ☐ |
 | C1-03 | Photos de Luc et de l'atelier | Élevée | M | C0-04 | ☐ |
-| C1-04 | Bloc de réassurance | Élevée | S | C0-01 | ☐ |
+| C1-04 | Bloc de réassurance | Élevée | S | C0-01 | ✅ |
 | C1-05 | Cible et territoire clarifiés | Élevée | M | P1-03 | ☐ |
 | C1-06 | CTA secondaire renforcé | Moyenne | S | — | ☐ |
 | C2-01 | Photos/plans dans le formulaire | Élevée | M | forfait Formspree | ☐ |
 | C2-02 | Délai souhaité + panne en cours | Élevée | S | — | ☐ |
 | C2-03 | Micro-réassurance sous le bouton | Élevée | S | C1-04, C0-02 | ☐ |
 | C2-04 | Confirmation et erreur | Moyenne | S | C2-01 | ☐ |
-| C2-05 | Bloc urgence sur Contact | Élevée | S | C0-02 | ☐ |
+| C2-05 | Bloc urgence sur Contact | Élevée | S | C0-02 | ✅ neutre |
 | C2-06 | Accessibilité du formulaire | Moyenne | S | — | ✅ |
 | C2-07 | Test d'envoi complet | Élevée | S | C2-01 à C2-04 | ☐ |
-| C3-01 | Légendes des projets accueil | Élevée | S | — | ☐ |
-| C3-02 | Lien « Voir toutes les réalisations » | Élevée | S | P3-02 | ☐ |
+| C3-01 | Légendes des projets accueil | Élevée | S | — | ✅ |
+| C3-02 | Lien « Voir toutes les réalisations » | Élevée | S | P3-02 | ✅ option B |
 | C3-03 | 3 études de cas | Élevée | L | C0-01, C0-04, P3-03 | ☐ |
-| C3-04 | Images et icônes dupliquées | Moyenne | S | — | ☐ |
-| C3-05 | Contexte des galeries | Moyenne | M | C0-03 | ☐ |
+| C3-04 | Images et icônes dupliquées | Moyenne | S | — | ✅ image; icônes documentées |
+| C3-05 | Contexte des galeries | Moyenne | M | C0-03 | ✅ |
 | C4-01 | Page Soudage | Élevée | L | C0-03, C0-04 | ☐ |
 | C4-02 | Page Maintenance industrielle | Élevée | L | C0-03, C0-04 | ☐ |
 | C4-03 | Matériaux et capacités (Fabrication) | Élevée | S | C0-03 | ☐ |
 | C4-04 | Navigation Soudage/Maintenance | Élevée | S | C4-01, C4-02 | ☐ |
 | C4-05 | Pages locales | Basse | L | C0-01, P0-02 | ☐ |
-| C4-06 | FAQ conversion | Moyenne | M | C0-02, C0-03 | ☐ |
-| C5-01 | Conversions GA4 | Élevée | S | — | 🟡 événements codés, marquage à faire |
+| C4-06 | FAQ conversion | Moyenne | M | C0-02, C0-03 | ✅ |
+| C5-01 | Conversions GA4 | Élevée | S | — | 🟡 code prêt, marquage GA4 à faire |
 | C5-02 | Suivi par source | Moyenne | M | C5-01 | ☐ |
 | C5-03 | Revue 30/60/90 | Moyenne | S | C5-01 | ☐ |
 | C5-04 | Test de CTA | Basse | M | C5-01 | ☐ |
@@ -261,6 +264,25 @@ Demander au client, avec son accord :
 | 11 | Pages locales | C4-05 | Après les preuves et le contenu de base |
 | 12 | Bouton d'appel fixe mobile | — | ✅ Déjà en place (MOB-09) |
 | 13 | Suivi des appels et soumissions | C5-01, C5-02 | Recoupe P6-03 |
+
+---
+
+## Annexe D — Procédure de marquage des conversions dans GA4
+
+À faire dans l'interface GA4 (propriété `G-TNM9JC9YL7`), avec un compte ayant le rôle Administrateur.
+
+1. Ouvrir **Admin → Événements** (ou **Admin → Événements clés** selon la version de l'interface).
+2. Vérifier que les événements arrivent dans **Rapports → Temps réel** après un clic de test sur un numéro, un courriel et le formulaire.
+3. Marquer comme **événement clé / conversion** :
+   - `appel_telephone`
+   - `courriel`
+   - `demande_soumission`
+   - `formulaire_envoye`
+4. Pour `formulaire_envoye`, vérifier que le paramètre `service` remonte bien (Découpe, Fabrication, etc.).
+5. Faire un test complet : clic sur `tel:`, clic sur `mailto:`, envoi réel du formulaire. Attendre 24 à 48 h si l'interface n'affiche pas le test immédiatement.
+6. Documenter la date du marquage dans le tableau de suivi (C5-01) et dans la fiche de validation si le suivi est mentionné.
+
+> Les quatre événements sont déjà envoyés par `assets/js/custom.js` (source) et `assets/js/custom.min.js` (fichier chargé par les pages). Aucune modification de code n'est nécessaire.
 
 ---
 

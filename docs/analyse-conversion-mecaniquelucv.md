@@ -2,8 +2,8 @@
 
 **Date :** 14 novembre 2026
 **Backlog de suivi :** [`backlog-conversion-mecaniquelucv.md`](backlog-conversion-mecaniquelucv.md)
-**Pages analysées :** Accueil, Contact, Fabrication
-**Non analysé :** pages Découpe, Installation, Modification, Réparation, vitesse du site, statistiques de visites
+**Pages analysées :** Accueil, Contact, Fabrication, Découpe, Installation, Modification, Réparation
+**Non analysé :** vitesse du site, statistiques de visites
 
 ---
 
@@ -46,6 +46,51 @@ Les légendes sont génériques (« Réalisation Atelier MLV », « Pièce indus
 
 ---
 
+## Analyse des quatre pages de service restantes
+
+Audit complémentaire du 14 novembre 2026 (tâche C0-06). Les quatre pages suivent le même gabarit : bannière, texte long, liste de réalisations, méthode en 4 étapes, FAQ, encart « Discuter de votre projet », galerie et bandeau CTA. Les constats portent donc sur ce qui distingue chaque page.
+
+### Découpe
+
+- **Preuves :** quatre photos légendées avec l'année (2021, 2022) et une mention « Atelier MLV ». Aucun client nommé, aucun résultat mesuré, aucune certification. La page laisse entendre un travail en atelier uniquement, sans le préciser explicitement.
+- **Urgence :** aucune. Aucune mention de panne, de délai ou de disponibilité.
+- **Formulaire et CTA :** bandeau et encart latéral identiques aux autres pages, sans réassurance ni mention du déplacement. La FAQ promet une estimation « lors de la demande de soumission », ce qui est correct.
+- **Réalisations :** les légendes indiquent le type de travail, mais pas l'usage ni le résultat. Une seule légende a été contextualisée (C3-05).
+- **Point corrigé :** la meta annonçait « délais respectés », promesse non validée (C0-07).
+
+### Installation
+
+- **Preuves :** galerie de trois photos dont un avant/après. C'est la page la mieux servie par les images. Aucune référence client, aucun chantier nommé.
+- **Urgence :** aucune. La page parle de planification et d'accès, pas de panne ni de bris.
+- **Formulaire et CTA :** encart et bandeau génériques. La FAQ ne mentionnait pas que le déplacement est facturé séparément ; c'est désormais précisé (C4-06).
+- **Réalisations :** bon potentiel avant/après, mais la légende ne dit pas ce qui a été installé ni dans quel contexte.
+
+### Modification
+
+- **Preuves :** cinq photos avec des sujets concrets (base de moteur, remorque, broyeur, structure). C'est la galerie la plus parlante du site. Aucun client nommé, aucun résultat chiffré.
+- **Urgence :** aucune.
+- **Formulaire et CTA :** identiques aux autres pages. La page explique bien le refus du travail inutile, ce qui rassure, mais aucun élément ne différencie le CTA.
+- **Réalisations :** les légendes nomment la pièce ; elles ne disent pas le problème initial ni le gain obtenu.
+
+### Réparation
+
+- **Preuves :** deux photos seulement, dont une remise en service. C'est la page la plus faible en volume de preuves, alors que c'est le service le plus lié à l'urgence.
+- **Urgence :** aucune, alors que la page est la plus concernée. La promesse « dans les meilleurs délais » a été retirée (C0-07) ; l'encart « Panne ou bris ? » est désormais sur Contact (C2-05), pas sur la page Réparation.
+- **Formulaire et CTA :** identiques aux autres pages. La FAQ explique le diagnostic, mais pas comment accélérer la demande (photos, dimensions, description).
+- **Réalisations :** les deux légendes sont génériques ; une seule a été contextualisée (C3-05).
+
+### Constat commun
+
+1. **Aucune preuve nommée** sur les quatre pages : ni client, ni secteur d'activité, ni résultat. Les photos sont la seule preuve.
+2. **Aucun parcours d'urgence** : les quatre pages renvoient au même formulaire général.
+3. **CTA identique partout** : « Demander une soumission », sans réassurance ni rappel du déplacement facturé.
+4. **Galeries inégales** : Modification est riche, Réparation est pauvre.
+5. **FAQ correcte mais défensive** : elle répond aux objections de méthode, pas aux questions de conversion (prix, déplacement, heures, photos).
+
+Ces constats confirment les freins 1, 3, 4 et 5 de l'analyse initiale. Les corrections appliquées (réassurance sous les CTA, encart d'urgence sur Contact, FAQ de conversion, légendes contextualisées) sont tracées dans le backlog.
+
+---
+
 ## Plan d'action
 
 ### Cette semaine (gratuit, gros impact)
@@ -77,3 +122,7 @@ Le site est propre et bien structuré. Son problème est qu'il rassure peu et ne
 - [Accueil](https://mecaniquelucv.com/)
 - [Contact](https://mecaniquelucv.com/contact.html)
 - [Fabrication](https://mecaniquelucv.com/services-fabrication.html)
+- [Découpe](https://mecaniquelucv.com/services-decoupe.html)
+- [Installation](https://mecaniquelucv.com/services-installation.html)
+- [Modification](https://mecaniquelucv.com/services-modification.html)
+- [Réparation](https://mecaniquelucv.com/services-reparation.html)

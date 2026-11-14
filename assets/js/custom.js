@@ -423,6 +423,22 @@
 		}
 	});
 
+	document.addEventListener("submit", function (e) {
+		var form = e.target;
+		if (!form || !form.getAttribute) {
+			return;
+		}
+		var action = form.getAttribute("action") || "";
+		if (action.indexOf("formspree.io") === -1) {
+			return;
+		}
+		var serviceField = form.querySelector('[name="service"]');
+		mlvTrack("formulaire_envoye", {
+			form_id: form.classList.contains("mlv-contact__form") ? "contact" : "autre",
+			service: serviceField ? serviceField.value : ""
+		});
+	});
+
 	/*========== Visionneuse de galerie ==========*/
 	var popup = {
 		lastFocus: null,

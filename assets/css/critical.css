@@ -826,6 +826,69 @@ textarea:focus-visible,
   color: #fff;
 }
 
+.mlv-cta__side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.mlv-reassurance {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.mlv-reassurance li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.mlv-reassurance i {
+  color: #fff;
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   Projets phares (accueil)
+   ========================================================================== */
+
+.mlv-projects .row {
+  row-gap: 26px;
+}
+
+.mlv-project {
+  margin: 0;
+}
+
+.mlv-project img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--mlv-radius);
+}
+
+.mlv-project figcaption {
+  margin-top: 12px;
+  color: #d3d5d5;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.mlv-project figcaption strong {
+  display: block;
+  margin-bottom: 2px;
+  color: #fff;
+  font-size: 15px;
+}
+
 /* ==========================================================================
    Galeries des pages de service
    ========================================================================== */
@@ -1168,6 +1231,10 @@ textarea:focus-visible,
     padding: 44px 40px;
   }
 
+  .mlv-cta__side {
+    width: 100%;
+  }
+
   .mlv-footer__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1356,6 +1423,10 @@ textarea:focus-visible,
     width: 100%;
   }
 
+  .mlv-cta__side .mlv-cta__actions {
+    width: 100%;
+  }
+
   .gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
@@ -1532,6 +1603,62 @@ a, button, .theme-btn-1, .mlv-callbar, .scroll-up, .popup-nav, .close {
 .mlv-contact__list i { color: #F94D1D; margin-top: 4px; }
 .mlv-contact__list a { color: #fff; }
 .mlv-contact__hours { color: #9FA0A1; font-size: 14px; margin-top: 16px; }
+
+/* Encart « Panne ou bris ? » — aucune promesse de délai ni d'urgence hors horaires */
+.mlv-urgence {
+  margin: 26px 0 0;
+  padding: 22px 24px;
+  border: 1px solid rgba(249, 77, 29, 0.45);
+  border-left: 4px solid var(--mlv-orange);
+  border-radius: var(--mlv-radius);
+  background: rgba(249, 77, 29, 0.08);
+}
+
+.mlv-urgence h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.mlv-urgence h3 i {
+  color: var(--mlv-orange);
+}
+
+.mlv-urgence p {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.mlv-urgence__phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: 4px;
+  background: var(--mlv-orange);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  transition: background 0.25s ease;
+}
+
+.mlv-urgence__phone:hover,
+.mlv-urgence__phone:focus {
+  background: #ff6a3d;
+  color: #fff;
+}
+
+.mlv-urgence .mlv-urgence__note {
+  margin: 10px 0 0;
+  color: #9fa0a1;
+  font-size: 13px;
+}
 .mlv-contact__note { font-size: 12px; color: #9FA0A1; margin-top: 10px; }
 
 .mlv-contact__form {
