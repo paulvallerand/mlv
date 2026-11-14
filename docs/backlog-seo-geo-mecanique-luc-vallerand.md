@@ -40,7 +40,7 @@
 | Page « À propos » | Absente | À créer |
 | Page « Réalisations » | Absente | À créer |
 | Témoignages / logos clients | Absents | À collecter avec autorisation |
-| Formulaire de contact | Action `https://formspree.io/f/xaeoqdrn` | Identifiant intégré ; test d'envoi à effectuer |
+| Formulaire de contact | Action `https://formspree.io/f/xaeoqdrn` | Test d'envoi réussi |
 | Réseaux sociaux | Liens `href="#"` | À remplacer ou à retirer |
 | Horaires | Lundi au vendredi, de 7 h à 19 h | Publiés sur `contact.html` et dans le JSON-LD |
 | Google Business Profile | Non vérifié dans le dépôt | À créer/optimiser |
@@ -57,9 +57,8 @@
   - *Critère :* fiche remplie et datée, validée par le propriétaire.
 - [x] **P0-02 — Confirmer le territoire** : Beauce, Chaudière-Appalaches et région de Québec, avec les 8 municipalités validées (voir fiche, sections 3.1 et 3.2). Formulation appliquée au contenu et au JSON-LD `areaServed`. **Effort : S.**
   - *Critère :* liste courte et définitive disponible pour le site, le JSON-LD et GBP. ✅ (reste à reporter sur GBP en P4-03).
-- [ ] **P0-03 — Rendre le formulaire de contact fonctionnel** : identifiant Formspree `xaeoqdrn` intégré dans `contact.html`. **Effort : S.**
-  - ⏳ Reste à faire : envoyer une demande de test et vérifier la réception à `mecaniquelucv@gmail.com`.
-  - *Critère :* envoi de test reçu, message de confirmation affiché, message d'erreur prévu.
+- [x] **P0-03 — Rendre le formulaire de contact fonctionnel** : identifiant Formspree `xaeoqdrn` intégré dans `contact.html`, test d'envoi réussi vers `mecaniquelucv@gmail.com`. **Effort : S.**
+  - *Critère :* envoi de test reçu, message de confirmation affiché, message d'erreur prévu. ✅
 - [ ] **P0-04 — Corriger les liens sociaux** : renseigner les URL Facebook/Instagram réelles ou retirer les icônes (en-tête et pied de page). **Effort : S.**
   - *Critère :* aucun lien `href="#"` restant dans la navigation sociale.
 - [ ] **P0-05 — Valider les preuves disponibles** : nombre de projets réalisés, années d'expérience, délais de réponse, types de clients, photos utilisables et autorisations. **Effort : S.**
@@ -160,7 +159,7 @@ Gabarit commun à appliquer à chaque page (voir annexe C) : description claire,
 |---|---|---|---|---|---|
 | P0-01 | Fiche de validation entreprise | Critique | S | — | 🟡 Pré-remplie, validation en attente |
 | P0-02 | Confirmer le territoire | Critique | S | P0-01 | ✅ |
-| P0-03 | Formulaire Formspree fonctionnel | Critique | S | — | 🟡 Identifiant intégré, test à faire |
+| P0-03 | Formulaire Formspree fonctionnel | Critique | S | — | ✅ |
 | P0-04 | Liens sociaux réels ou retirés | Critique | S | — | ☐ |
 | P0-05 | Preuves publiables | Critique | S | P0-01 | ☐ |
 | P0-06 | Valider titles/meta cibles | Critique | S | P0-02 | ☐ |

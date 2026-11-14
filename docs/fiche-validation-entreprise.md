@@ -2,14 +2,14 @@
 
 > Document de travail pour la tâche **P0-01** du [backlog SEO/GEO](backlog-seo-geo-mecanique-luc-vallerand.md).
 > Objectif : disposer d'une source de vérité unique avant de publier du contenu (services, territoire, matériaux, preuves).
-> Version : **brouillon v0.2** — 13 novembre 2026.
-> Statut global : **validation partielle** — territoire, horaires, services, clientèles et formulaire validés ; preuves et présence numérique à compléter.
+> Version : **brouillon v0.3** — 13 novembre 2026.
+> Statut global : **validation partielle** — coordonnées, territoire, horaires, services, clientèles et formulaire validés ; preuves et présence numérique à compléter.
 
 ## Légende des statuts
 
 | Statut | Signification |
 |---|---|
-| ✅ Confirmé | Information présente et cohérente dans le code ou la documentation du site. |
+| ✅ Confirmé | Information confirmée par le propriétaire, ou présente et cohérente dans le code du site. |
 | 🟡 À valider | Information déjà publiée sur le site, mais non confirmée explicitement par le propriétaire. |
 | ⛔ À CONFIRMER | Information absente ou contradictoire : **interdiction de la publier avant validation**. |
 
@@ -23,7 +23,7 @@
 |---|---|---|---|
 | Nom commercial | Mécanique Luc Vallerand | En-tête et pied de page de toutes les pages | ✅ |
 | Raison sociale / entité légale | Mécanique Luc Vallerand | — | ✅ |
-| Année de fondation | 2019 | Accueil, pied de page, JSON-LD, README | 🟡 |
+| Année de fondation | 2019 | Accueil, pied de page, JSON-LD | 🟡 |
 | Activité principale | Fabrication métallique, maintenance industrielle, soudage | Titles, accueil, README | ✅ |
 | Site Web | https://mecaniquelucv.com/ | `CNAME`, canonicals | ✅ |
 | Langue du site | Français (`lang="fr"`) | Toutes les pages | ✅ |
@@ -148,7 +148,7 @@ Municipalités confirmées par le propriétaire le 13 novembre 2026 :
 | Élément | Valeur | Source | Statut |
 |---|---|---|---|
 | Domaine | mecaniquelucv.com | `CNAME` | ✅ |
-| Hébergement | GitHub Pages | README | ✅ |
+| Hébergement | GitHub Pages | Dépôt GitHub, `CNAME` | ✅ |
 | Google Analytics 4 | `G-TNM9JC9YL7` | `<head>` des pages | ✅ |
 | Validation Bing | `BingSiteAuth.xml` | Racine du dépôt | ✅ |
 | Vidéo YouTube | `k8x2J3vZwwg` | `index.html`, `services-tous.html` | 🟡 |
@@ -163,7 +163,7 @@ Municipalités confirmées par le propriétaire le 13 novembre 2026 :
 | Élément | État | Statut |
 |---|---|---|
 | Service utilisé | Formspree | ✅ |
-| Identifiant | `xaeoqdrn` — intégré dans `contact.html`, test d'envoi à effectuer | 🟡 |
+| Identifiant | `xaeoqdrn` — intégré dans `contact.html`, test d'envoi réussi | ✅ |
 | Champs collectés | Nom, courriel, téléphone, service, besoin | ✅ |
 | Page de confirmation | Non requise — message par défaut Formspree | ✅ |
 | Destination des demandes | mecaniquelucv@gmail.com | ✅ |
@@ -198,7 +198,7 @@ Municipalités confirmées par le propriétaire le 13 novembre 2026 :
 - [ ] **Preuves** : décider quels chiffres et engagements seront publiés (aucun par défaut).
 - [ ] **Réseaux sociaux** : fournir les URL ou retirer les icônes.
 - [x] **Horaires** : lundi au vendredi, de 7 h à 19 h — publiés sur `contact.html` et dans le JSON-LD.
-- [x] **Formulaire** : identifiant Formspree `xaeoqdrn` intégré ; test d'envoi à effectuer.
+- [x] **Formulaire** : identifiant Formspree `xaeoqdrn` intégré ; test d'envoi réussi.
 
 ## 12. Validation
 
