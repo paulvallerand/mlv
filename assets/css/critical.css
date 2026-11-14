@@ -646,6 +646,44 @@ textarea:focus-visible,
 }
 
 /* ==========================================================================
+   Zone desservie
+   ========================================================================== */
+
+.mlv-zone {
+  border-top: 1px solid var(--mlv-border);
+  background: var(--mlv-black);
+}
+
+.mlv-zone.section-padding {
+  padding: 110px 0;
+}
+
+.mlv-zone__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 900px;
+  margin: 0 auto 34px;
+  padding: 0;
+  list-style: none;
+}
+
+.mlv-zone__list li {
+  padding: 8px 16px;
+  border: 1px solid var(--mlv-border);
+  border-radius: 999px;
+  background: var(--mlv-surface);
+  color: var(--mlv-text);
+  font-size: 14.5px;
+  line-height: 1.4;
+}
+
+.mlv-zone__cta {
+  text-align: center;
+}
+
+/* ==========================================================================
    Vidéo et appel à l'action final
    ========================================================================== */
 
@@ -1174,7 +1212,8 @@ textarea:focus-visible,
   }
 
   .mlv-why.section-padding,
-  .mlv-process.section-padding {
+  .mlv-process.section-padding,
+  .mlv-zone.section-padding {
     padding: 80px 0;
   }
 
@@ -1228,6 +1267,10 @@ textarea:focus-visible,
   .mlv-process__grid,
   .mlv-footer__grid {
     grid-template-columns: 1fr;
+  }
+
+  .mlv-zone.section-padding {
+    padding: 70px 0;
   }
 
   .mlv-cta {

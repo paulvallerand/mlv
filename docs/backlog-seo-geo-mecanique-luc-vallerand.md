@@ -35,8 +35,8 @@
 | Canonical | Présent sur toutes les pages | — |
 | JSON-LD | `LocalBusiness` (accueil, contact, services), `Service` + `FAQPage` sur les 5 pages de service | `areaServed` (3 zones) et `openingHoursSpecification` ajoutés |
 | FAQ | 3 questions par page de service | À enrichir (5 à 7 questions) |
-| `robots.txt` | `Allow: /` + sitemap déclaré | Pas de règle explicite pour `OAI-SearchBot` |
-| `sitemap.xml` | 8 URLs, `lastmod` au 2026-11-11 | À mettre à jour à chaque publication |
+| `robots.txt` | `Allow: /` + sitemap déclaré | Règles explicites pour `OAI-SearchBot`, `Googlebot` et `bingbot` |
+| `sitemap.xml` | 8 URLs, `lastmod` au 2026-11-13 | À mettre à jour à chaque publication |
 | Page « À propos » | Absente | À créer |
 | Page « Réalisations » | Absente | À créer |
 | Témoignages / logos clients | Absents | À collecter avec autorisation |
@@ -71,18 +71,21 @@
 ## Phase 1 — Accueil et fondations de contenu
 
 - [ ] **P1-01 — Réviser le title et la meta de l'accueil** (annexe B, ligne Accueil). **Effort : S.**
-- [ ] **P1-02 — Ajuster le H1 et le texte du hero** pour intégrer « Beauce » et « mécanique industrielle », sans surcharger. **Effort : S.**
-  - *Critère :* H1 unique, lisible sur mobile, mot-clé principal présent naturellement.
+- [x] **P1-02 — Ajuster le H1 et le texte du hero** pour intégrer « Beauce » et « mécanique industrielle », sans surcharger. **Effort : S.**
+  - *Critère :* H1 unique, lisible sur mobile, mot-clé principal présent naturellement. ✅ (« sur mesure en Beauce » ajouté au H1).
 - [ ] **P1-03 — Réécrire la section « Notre mission »** avec le texte de la section 5 de la stratégie, adapté aux faits validés : clientèles, services, territoire, approche. **Effort : M.**
   - *Critère :* 3 à 4 paragraphes, aucune affirmation non confirmée, un CTA en fin de section.
-- [ ] **P1-04 — Ajouter un bloc visible « Zone desservie »** sur l'accueil : municipalités confirmées + phrase de couverture + lien vers `contact.html`. **Effort : S.**
-  - *Critère :* contenu indexable en HTML (pas une image), liens internes valides.
-- [ ] **P1-05 — Renforcer les CTA de l'accueil** : téléphone cliquable visible sur desktop, bouton secondaire « Demander une soumission », réassurance (« réponse rapide », uniquement si confirmé). **Effort : S.**
+- [x] **P1-04 — Ajouter un bloc visible « Zone desservie »** sur l'accueil : municipalités confirmées + phrase de couverture + lien vers `contact.html`. **Effort : S.**
+  - *Critère :* contenu indexable en HTML (pas une image), liens internes valides. ✅ (section `.mlv-zone` avec les 8 municipalités et un CTA vers `contact.html`).
+- [x] **P1-05 — Renforcer les CTA de l'accueil** : téléphone cliquable visible sur desktop, bouton secondaire « Demander une soumission », réassurance (« réponse rapide », uniquement si confirmé). **Effort : S.**
+  - *Critère :* CTA et téléphone cliquables présents dans le hero et en bas de page ; mention « Réponse rapide » non confirmée retirée. ✅
 - [x] **P1-06 — Mettre à jour le JSON-LD `LocalBusiness`** : `areaServed` (3 zones) et `openingHoursSpecification` (lun.–ven. 7 h–19 h) appliqués sur toutes les pages. `sameAs` non requis tant que les profils sociaux ne sont pas fournis. **Effort : S.**
   - *Critère :* JSON valide, mêmes données que le contenu visible. ✅
-- [ ] **P1-07 — Ajouter des CTA intermédiaires** après les blocs de services et avant le pied de page. **Effort : S.**
+- [x] **P1-07 — Ajouter des CTA intermédiaires** après les blocs de services et avant le pied de page. **Effort : S.**
+  - *Critère :* CTA « Vérifier la couverture de votre secteur » ajouté dans le bloc Zone desservie, après les services. ✅
 - [ ] **P1-08 — Mettre à jour le maillage interne** : accueil → services → réalisations → contact ; ancres descriptives. **Effort : S.**
-- [ ] **P1-09 — Mettre à jour le sitemap** (`lastmod`, nouvelles URLs) après chaque publication. **Effort : S.**
+- [x] **P1-09 — Mettre à jour le sitemap** (`lastmod`, nouvelles URLs) après chaque publication. **Effort : S.**
+  - *Critère :* `lastmod` des 8 pages mis au 2026-11-13. ✅
 
 ---
 
@@ -96,7 +99,8 @@ Gabarit commun à appliquer à chaque page (voir annexe C) : description claire,
 - [ ] **P2-04 — Modification** (`services-modification.html`) : idem + décrire les cas d'adaptation/renforcement. **Effort : M.**
 - [ ] **P2-05 — Réparation** (`services-reparation.html`) : idem + préciser diagnostic, soudage, remise en service. **Effort : M.**
 - [ ] **P2-06 — Vérifier la cohérence des `Service` JSON-LD** avec le contenu visible de chaque page. **Effort : S.**
-- [ ] **P2-07 — Vérifier les liens croisés** entre les cinq services, `services-tous.html` et `contact.html`. **Effort : S.**
+- [x] **P2-07 — Vérifier les liens croisés** entre les cinq services, `services-tous.html` et `contact.html`. **Effort : S.**
+  - *Critère :* audit automatique des liens internes : 0 lien cassé. ✅
 
 *Critère d'acceptation par page :* title et meta uniques, H2 qui reprennent les intentions de recherche, au moins 5 questions FAQ, un CTA visible au-dessus et en dessous du contenu, images avec `alt` descriptif et légende.
 
@@ -127,6 +131,7 @@ Gabarit commun à appliquer à chaque page (voir annexe C) : description claire,
 - [ ] **P4-05 — Inscrire l'entreprise dans les répertoires régionaux pertinents** : chambres de commerce, développement économique, répertoires industriels. Vérifier les conditions avant inscription. **Effort : M.**
 - [ ] **P4-06 — Obtenir des backlinks légitimes** : fournisseurs, partenaires, associations, médias régionaux. **Effort : L (récurrent).**
 - [ ] **P4-07 — Uniformiser les coordonnées (NAP)** sur le site, GBP et tous les annuaires. **Effort : S.**
+  - 🟡 Site vérifié : nom, adresse, téléphone et courriel identiques partout. Reste à faire : GBP et annuaires.
 - [ ] **P4-08 — Afficher un lien vers la fiche Google Business Profile** sur `contact.html`. **Effort : S.**
 
 ---
@@ -136,9 +141,10 @@ Gabarit commun à appliquer à chaque page (voir annexe C) : description claire,
 - [ ] **P5-01 — Enrichir les FAQ** à 5–7 questions par page de service, avec réponses courtes, directes et factuelles. **Effort : M.**
 - [ ] **P5-02 — Synchroniser le JSON-LD `FAQPage`** avec les questions visibles. **Effort : S.**
 - [ ] **P5-03 — Rendre la page « À propos » exploitable par les IA** : description précise de l'entreprise, localisation, services, territoire, histoire, liens. **Effort : S.**
-- [ ] **P5-04 — Vérifier l'accès des robots IA** dans `robots.txt` : `OAI-SearchBot` (ChatGPT) et robots Bing, sans bloquer Googlebot. **Effort : S.**
-  - *Critère :* règles testées, sitemap toujours déclaré, aucun `Disallow` involontaire.
-- [ ] **P5-05 — Vérifier que les informations clés existent en HTML** (coordonnées, services, territoire), sans dépendre d'une image ou d'un script. **Effort : S.**
+- [x] **P5-04 — Vérifier l'accès des robots IA** dans `robots.txt` : `OAI-SearchBot` (ChatGPT) et robots Bing, sans bloquer Googlebot. **Effort : S.**
+  - *Critère :* règles testées, sitemap toujours déclaré, aucun `Disallow` involontaire. ✅ (`OAI-SearchBot`, `Googlebot` et `bingbot` autorisés explicitement).
+- [x] **P5-05 — Vérifier que les informations clés existent en HTML** (coordonnées, services, territoire), sans dépendre d'une image ou d'un script. **Effort : S.**
+  - *Critère :* coordonnées, services et territoire présents dans le HTML des pages. ✅
 - [ ] **P5-06 — Contrôler la cohérence des faits** entre accueil, services, à propos, contact, JSON-LD et GBP. **Effort : S.**
 
 ---
@@ -164,16 +170,17 @@ Gabarit commun à appliquer à chaque page (voir annexe C) : description claire,
 | P0-05 | Preuves publiables | Critique | S | P0-01 | ☐ |
 | P0-06 | Valider titles/meta cibles | Critique | S | P0-02 | ☐ |
 | P1-01 | Title/meta accueil | Élevée | S | P0-06 | ☐ |
-| P1-02 | H1 + hero accueil | Élevée | S | P0-02 | ☐ |
+| P1-02 | H1 + hero accueil | Élevée | S | P0-02 | ✅ |
 | P1-03 | Section mission | Élevée | M | P0-01, P0-05 | ☐ |
-| P1-04 | Bloc zone desservie | Élevée | S | P0-02 | ☐ |
-| P1-05 | CTA accueil | Élevée | S | — | ☐ |
+| P1-04 | Bloc zone desservie | Élevée | S | P0-02 | ✅ |
+| P1-05 | CTA accueil | Élevée | S | — | ✅ |
 | P1-06 | JSON-LD LocalBusiness | Élevée | S | P0-02 | ✅ |
-| P1-07 | CTA intermédiaires | Moyenne | S | — | ☐ |
+| P1-07 | CTA intermédiaires | Moyenne | S | — | ✅ |
 | P1-08 | Maillage interne | Moyenne | S | P3-06 | ☐ |
-| P1-09 | Sitemap | Moyenne | S | publications | ☐ |
+| P1-09 | Sitemap | Moyenne | S | publications | ✅ |
 | P2-01 à P2-05 | Pages de service | Élevée | M × 5 | P0-01, P0-06 | ☐ |
 | P2-06 | Cohérence JSON-LD Service | Moyenne | S | P2-01 à P2-05 | ☐ |
+| P2-07 | Liens croisés services | Moyenne | S | — | ✅ |
 | P3-01 | Page À propos | Élevée | L | P0-01, P0-05 | ☐ |
 | P3-02 | Page Réalisations | Élevée | M | P3-03 à P3-05 | ☐ |
 | P3-03 à P3-05 | 3 études de cas | Élevée | L | P0-05 | ☐ |
@@ -184,8 +191,10 @@ Gabarit commun à appliquer à chaque page (voir annexe C) : description claire,
 | P4-04 | Avis Google | Élevée | M | P4-03 | ☐ |
 | P4-05 | Répertoires régionaux | Moyenne | M | P0-01 | ☐ |
 | P4-06 | Backlinks | Moyenne | L | — | ☐ |
+| P4-07 | NAP uniforme | Moyenne | S | P4-03 | 🟡 Site OK, GBP/annuaires à faire |
 | P5-01 | FAQ enrichies | Moyenne | M | P2-01 à P2-05 | ☐ |
-| P5-04 | Robots IA | Moyenne | S | — | ☐ |
+| P5-04 | Robots IA | Moyenne | S | — | ✅ |
+| P5-05 | Infos clés en HTML | Moyenne | S | — | ✅ |
 | P6-01 | Search Console | Élevée | S | site en ligne | ☐ |
 | P6-02 | Bing Webmaster | Moyenne | S | P6-01 | ☐ |
 | P6-03 | Suivi des conversions | Moyenne | M | P0-03 | ☐ |

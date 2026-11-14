@@ -133,7 +133,7 @@ Municipalités confirmées par le propriétaire le 13 novembre 2026 :
 |---|---|---|
 | Nombre de projets réalisés | À CONFIRMER | ⛔ |
 | Années d'expérience | Déduites de 2019 — à confirmer | ⛔ |
-| Délai de réponse aux demandes | Le site dit « nous répondons rapidement » — précision à confirmer | ⛔ |
+| Délai de réponse aux demandes | Aucune promesse de délai publiée sur le site | ✅ |
 | Délais de réalisation typiques | À CONFIRMER | ⛔ |
 | Garanties offertes | À CONFIRMER | ⛔ |
 | Assurances (responsabilité, chantier) | À CONFIRMER | ⛔ |
@@ -199,6 +199,7 @@ Municipalités confirmées par le propriétaire le 13 novembre 2026 :
 - [ ] **Réseaux sociaux** : fournir les URL ou retirer les icônes.
 - [x] **Horaires** : lundi au vendredi, de 7 h à 19 h — publiés sur `contact.html` et dans le JSON-LD.
 - [x] **Formulaire** : identifiant Formspree `xaeoqdrn` intégré ; test d'envoi réussi.
+- [x] **Promesses de délai** : aucune promesse de réponse ou de remise en service publiée tant qu'elle n'est pas confirmée.
 
 ## 12. Validation
 
