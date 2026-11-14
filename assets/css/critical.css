@@ -330,44 +330,81 @@ textarea:focus-visible,
 
 /* Bannière de la page contact */
 
-.contact-banner .banner__area-content {
-  padding-top: 70px;
-  padding-bottom: 70px;
+.banner__area.contact-banner {
+  padding-top: 124px;
+  padding-bottom: 40px;
 }
 
-.contact-banner h1,
-.contact-banner h2 {
+.contact-banner .banner__area-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.contact-banner h1 {
+  margin-bottom: 6px;
   font-size: clamp(30px, 4vw, 50px);
   line-height: 1.15;
 }
 
-.contact-banner h3 {
+.contact-banner__sub {
+  margin-bottom: 14px;
   color: var(--mlv-text);
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.contact-banner h3 a {
-  color: var(--mlv-orange);
-}
-
-.contact-banner h3 a:hover {
-  color: #fff;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.4;
 }
 
 .contact-banner hr {
   max-width: 440px;
-  margin: 20px 0;
+  margin: 0 0 14px;
   border-color: var(--mlv-border);
 }
 
-.contact-banner h4 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.6;
+.contact-banner__list {
+  display: grid;
+  gap: 8px;
+  max-width: 560px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
+.contact-banner__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--mlv-text);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.contact-banner__list i {
+  margin-top: 4px;
+  color: var(--mlv-orange);
+}
+
+.contact-banner__list a {
+  color: var(--mlv-orange);
+}
+
+.contact-banner__list a:hover {
+  color: #fff;
+}
+
+.contact-banner .banner__area-bottom {
+  bottom: 0;
+}
+
+.contact-banner .banner__area-bottom-icon ul li {
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+
+.contact-banner .banner__area-bottom-icon ul li:last-child {
+  margin-right: 0;
+}
+
+/* Espacement de la section contact (les media queries ci-dessous le réduisent sur mobile) */
+.mlv-contact.section-padding { padding: 72px 0; }
 
 /* ==========================================================================
    Bandeau des services (carrousel)
@@ -1189,6 +1226,13 @@ textarea:focus-visible,
   }
 }
 
+@media (max-width: 991px) {
+  .banner__area.contact-banner {
+    padding-top: 150px;
+    padding-bottom: 36px;
+  }
+}
+
 @media (max-width: 767px) {
   .banner__area.hero {
     padding-top: 130px;
@@ -1206,9 +1250,22 @@ textarea:focus-visible,
     padding-top: 20px;
   }
 
+  .banner__area.contact-banner {
+    padding-top: 150px;
+    padding-bottom: 32px;
+  }
+
   .contact-banner .banner__area-content {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .contact-banner__list li {
+    font-size: 16px;
+  }
+
+  .mlv-contact.section-padding {
+    padding: 56px 0;
   }
 
   .mlv-why.section-padding,
@@ -1239,6 +1296,19 @@ textarea:focus-visible,
   .banner__area.hero {
     padding-top: 120px;
     padding-bottom: 56px;
+  }
+
+  .banner__area.contact-banner {
+    padding-top: 146px;
+    padding-bottom: 28px;
+  }
+
+  .contact-banner__sub {
+    margin-bottom: 14px;
+  }
+
+  .mlv-contact.section-padding {
+    padding: 44px 0;
   }
 
   .hero .banner__area-content h1 {
@@ -1455,6 +1525,7 @@ a, button, .theme-btn-1, .mlv-callbar, .scroll-up, .popup-nav, .close {
 }
 
 /* MOB-18 à MOB-20 : contact */
+.mlv-contact .row { align-items: start; }
 .mlv-contact__info h2 { margin-bottom: 12px; }
 .mlv-contact__list { list-style: none; padding: 0; margin: 20px 0; }
 .mlv-contact__list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; color: #CFD0D0; }
