@@ -2,8 +2,8 @@
 
 > Document de travail pour la tâche **P0-01** du [backlog SEO/GEO](backlog-seo-geo-mecanique-luc-vallerand.md).
 > Objectif : disposer d'une source de vérité unique avant de publier du contenu (services, territoire, matériaux, preuves).
-> Version : **brouillon v0.1** — 13 novembre 2026.
-> Statut global : **pré-remplie à partir du site actuel — validation du propriétaire requise**.
+> Version : **brouillon v0.2** — 13 novembre 2026.
+> Statut global : **validation partielle** — territoire, horaires, services, clientèles et formulaire validés ; preuves et présence numérique à compléter.
 
 ## Légende des statuts
 
@@ -22,9 +22,9 @@
 | Champ | Valeur | Source | Statut |
 |---|---|---|---|
 | Nom commercial | Mécanique Luc Vallerand | En-tête et pied de page de toutes les pages | ✅ |
-| Raison sociale / entité légale | Mécanique Luc Vallerand | — | ⛔ |
+| Raison sociale / entité légale | Mécanique Luc Vallerand | — | ✅ |
 | Année de fondation | 2019 | Accueil, pied de page, JSON-LD, README | 🟡 |
-| Activité principale | Fabrication métallique, maintenance industrielle, soudage | Titles, accueil, README | 🟡 |
+| Activité principale | Fabrication métallique, maintenance industrielle, soudage | Titles, accueil, README | ✅ |
 | Site Web | https://mecaniquelucv.com/ | `CNAME`, canonicals | ✅ |
 | Langue du site | Français (`lang="fr"`) | Toutes les pages | ✅ |
 
@@ -39,7 +39,7 @@
 | Pays | Canada (CA) | JSON-LD | ✅ |
 | Téléphone | 418-313-4032 (`+1-418-313-4032`) | `contact.html`, JSON-LD | ✅ |
 | Courriel | mecaniquelucv@gmail.com | `contact.html`, JSON-LD | ✅ |
-| Horaires | Lundi au Vendredi 7h à 19h | `contact.html` | ⛔ |
+| Horaires | Lundi au vendredi, de 7 h à 19 h | `contact.html` | ✅ |
 | Lien Google Maps | https://www.google.com/maps/search/?api=1&query=524+rue+Principale+Saint-Honore-de-Shenley+QC+G0M+1V0 | `contact.html` | ✅ |
 | Fiche Google Business Profile | À CONFIRMER (URL inconnue) | — | ⛔ |
 
@@ -79,16 +79,16 @@ Municipalités confirmées par le propriétaire le 13 novembre 2026 :
 
 | Service | Description publiée sur le site | Statut |
 |---|---|---|
-| Découpe | Découpe de pièces métalliques selon plans, croquis ou mesures ; travail à l'unité ou en petite série. | 🟡 |
-| Fabrication | Fabrication de pièces, structures et assemblages métalliques sur mesure, à l'unité ou en petite série. | 🟡 |
-| Installation | Montage et mise en place de pièces et structures, ajustement sur site. | 🟡 |
-| Modification | Adaptation, modification et renforcement de pièces et équipements existants. | 🟡 |
-| Réparation | Diagnostic, soudage, réparation et remise en service de pièces métalliques. | 🟡 |
-| Maintenance industrielle | Entretien d'équipements et maintenance industrielle. | 🟡 |
-| Soudage | Travaux de soudage et préparation avant soudage. | 🟡 |
+| Découpe | Découpe de pièces métalliques selon plans, croquis ou mesures ; travail à l'unité ou en petite série. | ✅ |
+| Fabrication | Fabrication de pièces, structures et assemblages métalliques sur mesure, à l'unité ou en petite série. | ✅ |
+| Installation | Montage et mise en place de pièces et structures, ajustement sur site. | ✅ |
+| Modification | Adaptation, modification et renforcement de pièces et équipements existants. | ✅ |
+| Réparation | Diagnostic, soudage, réparation et remise en service de pièces métalliques. | ✅ |
+| Maintenance industrielle | Entretien d'équipements et maintenance industrielle. | ✅ |
+| Soudage | Travaux de soudage et préparation avant soudage. | ✅ |
 
 - [x] Confirmer que les sept activités ci-dessus sont réellement offertes.
-- [ ] Préciser celles qui ne le sont pas (à retirer du site et du JSON-LD).
+- [x] Préciser celles qui ne le sont pas : aucune activité à retirer.
 - [ ] Ajouter les services manquants (ex. pliage, usinage, sablage, peinture), s'ils existent.
 
 ## 5. Matériaux et procédés
@@ -115,16 +115,16 @@ Municipalités confirmées par le propriétaire le 13 novembre 2026 :
 
 | Élément | Ce qui est publié | Statut |
 |---|---|---|
-| Entreprises industrielles | « entreprises du secteur industriel et manufacturier » (accueil) | 🟡 |
-| Entreprises manufacturières | Idem | 🟡 |
-| Particuliers | Non mentionné sur le site ; proposé par la stratégie | ⛔ |
-| Entrepreneurs / PME | Non mentionné ; proposé par la stratégie | ⛔ |
-| Projets à l'unité | Mentionné | 🟡 |
-| Petites séries | Mentionné | 🟡 |
-| Projets sur plans | Mentionné | 🟡 |
-| Projets sur site | Mentionné (installation, modification, réparation) | 🟡 |
+| Entreprises industrielles | « entreprises du secteur industriel et manufacturier » (accueil) | ✅ |
+| Entreprises manufacturières | Idem | ✅ |
+| Particuliers | Non mentionné sur le site ; proposé par la stratégie | ✅ |
+| Entrepreneurs / PME | Non mentionné ; proposé par la stratégie | ✅ |
+| Projets à l'unité | Mentionné | ✅ |
+| Petites séries | Mentionné | ✅ |
+| Projets sur plans | Mentionné | ✅ |
+| Projets sur site | Mentionné (installation, modification, réparation) | ✅ |
 
-- [ ] Confirmer les clientèles réellement ciblées et acceptées.
+- [x] Confirmer les clientèles réellement ciblées et acceptées.
 - [ ] Confirmer les types de projets à ne pas accepter (hors capacité).
 
 ## 7. Preuves, engagements et capacités
@@ -163,28 +163,29 @@ Municipalités confirmées par le propriétaire le 13 novembre 2026 :
 | Élément | État | Statut |
 |---|---|---|
 | Service utilisé | Formspree | ✅ |
-| Identifiant | `VOTRE_ID` (valeur de démonstration) | ⛔ **Non fonctionnel** |
+| Identifiant | `xaeoqdrn` — intégré dans `contact.html`, test d'envoi à effectuer | 🟡 |
 | Champs collectés | Nom, courriel, téléphone, service, besoin | ✅ |
-| Page de confirmation | À prévoir | ⛔ |
-| Destination des demandes | À CONFIRMER (adresse de réception) | ⛔ |
+| Page de confirmation | Non requise — message par défaut Formspree | ✅ |
+| Destination des demandes | mecaniquelucv@gmail.com | ✅ |
 
-- [ ] Fournir l'identifiant Formspree réel ou choisir un autre service.
-- [ ] Confirmer l'adresse courriel de réception des demandes.
-- [ ] Définir le message de confirmation et le délai de réponse annoncé.
+- [x] Fournir l'identifiant Formspree réel et l'intégrer au formulaire.
+- [x] Confirmer l'adresse courriel de réception des demandes.
+- [x] Message de confirmation : non requis (réponse par défaut Formspree).
+- [ ] Définir le délai de réponse annoncé sur le site (si publié).
 
 ## 10. Questions à poser au propriétaire
 
 > À utiliser telle quelle pour l'entrevue de validation. Une réponse = une mise à jour de la fiche.
 
-1. Confirmez-vous l'adresse, le téléphone, le courriel et l'année de fondation (2019) ?
-2. Quels sont les horaires d'ouverture officiels (et varient-ils en été) ?
+1. Confirmez-vous l'adresse, le téléphone, le courriel et l'année de fondation (2019) ? — **✅ Adresse, téléphone et courriel confirmés ; année 2019 encore à confirmer.**
+2. Quels sont les horaires d'ouverture officiels (et varient-ils en été) ? — **✅ Lundi au vendredi, de 7 h à 19 h.**
 3. Quel est le territoire réellement desservi : Beauce seulement, Beauce + Chaudière-Appalaches, ou aussi la région de Québec ? — **✅ Validé : les trois zones.**
 4. Quelles municipalités acceptez-vous de nommer publiquement ? — **✅ Validé : voir la liste en 3.2.**
-5. Lesquels de ces services offrez-vous réellement : découpe, fabrication, installation, modification, réparation, maintenance, soudage ?
+5. Lesquels de ces services offrez-vous réellement : découpe, fabrication, installation, modification, réparation, maintenance, soudage ? — **✅ Les sept activités sont confirmées.**
 6. Quels matériaux travaillez-vous (acier, aluminium, inox, autres) ?
 7. Quels procédés et équipements pouvez-vous publier (type de découpe, type de soudage, pliage, usinage, etc.) ?
 8. Travaillez-vous uniquement en atelier ou aussi sur site ? Quelles sont les limites ? — **✅ Sur site possible, déplacement facturé séparément ; limites à préciser.**
-9. Ciblez-vous les particuliers, les entrepreneurs ou uniquement les entreprises industrielles ?
+9. Ciblez-vous les particuliers, les entrepreneurs ou uniquement les entreprises industrielles ? — **✅ Particuliers, entrepreneurs/PME et entreprises industrielles et manufacturières.**
 10. Quelles preuves pouvez-vous publier : nombre de projets, ancienneté, délais, garanties, assurances, certifications ?
 11. Quelles sont les URL Facebook et Instagram, et la fiche Google Business Profile ?
 12. Autorisez-vous la publication des photos, témoignages et logos clients ? Lesquels ?
@@ -192,12 +193,12 @@ Municipalités confirmées par le propriétaire le 13 novembre 2026 :
 ## 11. Décisions à prendre (arbitrages)
 
 - [x] **Territoire** : formulation unique retenue le 13 novembre 2026 — « Beauce, Chaudière-Appalaches et région de Québec », appliquée au contenu et au JSON-LD `areaServed`. Reste à répercuter sur GBP et les annuaires.
-- [ ] **Clientèles** : confirmer si « particuliers et entrepreneurs » est ajouté au discours actuel orienté entreprises.
-- [ ] **Services** : figer la liste des services publiés (7 activités actuelles) et supprimer toute mention non confirmée.
+- [x] **Clientèles** : particuliers, entrepreneurs/PME, entreprises industrielles et manufacturières confirmés le 13 novembre 2026.
+- [x] **Services** : liste des sept activités confirmée ; aucune à retirer.
 - [ ] **Preuves** : décider quels chiffres et engagements seront publiés (aucun par défaut).
 - [ ] **Réseaux sociaux** : fournir les URL ou retirer les icônes.
-- [ ] **Horaires** : publier des horaires exacts ou retirer la mention actuelle.
-- [ ] **Formulaire** : activer Formspree ou remplacer par un autre moyen de contact.
+- [x] **Horaires** : lundi au vendredi, de 7 h à 19 h — publiés sur `contact.html` et dans le JSON-LD.
+- [x] **Formulaire** : identifiant Formspree `xaeoqdrn` intégré ; test d'envoi à effectuer.
 
 ## 12. Validation
 
@@ -226,17 +227,17 @@ Ces informations peuvent être réutilisées sans risque dans les contenus et le
 - Municipalités desservies : Saint-Honoré-de-Shenley, Saint-Georges, Sainte-Marie, Beauceville, Saint-Joseph-de-Beauce, Thetford Mines, Lévis, Québec
 - Rayon d'intervention : 200 km ou plus
 - Déplacement sur site : possible, facturé séparément
+- Horaires : lundi au vendredi, de 7 h à 19 h
+- Clientèles : particuliers, entrepreneurs/PME, entreprises industrielles et manufacturières
+- Formulaire : Formspree `xaeoqdrn`, réception à mecaniquelucv@gmail.com
 - Domaine, hébergement, identifiant GA4, validation Bing
 - Lien Google Maps de l'adresse
 
 ## Données à ne pas publier avant validation (⛔)
 
-- Horaires d'ouverture
 - Matériaux autres que l'acier et l'aluminium
 - Procédés non décrits (pliage, usinage, types de soudage)
-- Clientèles « particuliers » et « entrepreneurs »
 - Chiffres (nombre de projets, années, délais, capacité)
 - Garanties, assurances et certifications
 - Témoignages et logos clients
 - URL des réseaux sociaux et de Google Business Profile
-- Identifiant Formspree réel

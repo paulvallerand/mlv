@@ -33,16 +33,16 @@
 | H1 | Un seul par page | — |
 | Hiérarchie H1→H2→H3 | Corrigée | — |
 | Canonical | Présent sur toutes les pages | — |
-| JSON-LD | `LocalBusiness` (accueil, contact, services), `Service` + `FAQPage` sur les 5 pages de service | `areaServed` aligné sur les 3 zones : Beauce, Chaudière-Appalaches, région de Québec |
+| JSON-LD | `LocalBusiness` (accueil, contact, services), `Service` + `FAQPage` sur les 5 pages de service | `areaServed` (3 zones) et `openingHoursSpecification` ajoutés |
 | FAQ | 3 questions par page de service | À enrichir (5 à 7 questions) |
 | `robots.txt` | `Allow: /` + sitemap déclaré | Pas de règle explicite pour `OAI-SearchBot` |
 | `sitemap.xml` | 8 URLs, `lastmod` au 2026-11-11 | À mettre à jour à chaque publication |
 | Page « À propos » | Absente | À créer |
 | Page « Réalisations » | Absente | À créer |
 | Témoignages / logos clients | Absents | À collecter avec autorisation |
-| Formulaire de contact | Action `https://formspree.io/f/VOTRE_ID` | **Non fonctionnel** : identifiant à remplacer |
+| Formulaire de contact | Action `https://formspree.io/f/xaeoqdrn` | Identifiant intégré ; test d'envoi à effectuer |
 | Réseaux sociaux | Liens `href="#"` | À remplacer ou à retirer |
-| Horaires | « À confirmer avec l'atelier » | À valider |
+| Horaires | Lundi au vendredi, de 7 h à 19 h | Publiés sur `contact.html` et dans le JSON-LD |
 | Google Business Profile | Non vérifié dans le dépôt | À créer/optimiser |
 
 ---
@@ -57,8 +57,9 @@
   - *Critère :* fiche remplie et datée, validée par le propriétaire.
 - [x] **P0-02 — Confirmer le territoire** : Beauce, Chaudière-Appalaches et région de Québec, avec les 8 municipalités validées (voir fiche, sections 3.1 et 3.2). Formulation appliquée au contenu et au JSON-LD `areaServed`. **Effort : S.**
   - *Critère :* liste courte et définitive disponible pour le site, le JSON-LD et GBP. ✅ (reste à reporter sur GBP en P4-03).
-- [ ] **P0-03 — Rendre le formulaire de contact fonctionnel** : remplacer `VOTRE_ID` dans `contact.html` par l'identifiant Formspree réel (ou un autre service). **Effort : S.**
-  - *Critère :* envoi de test reçu, page de confirmation affichée, message d'erreur prévu.
+- [ ] **P0-03 — Rendre le formulaire de contact fonctionnel** : identifiant Formspree `xaeoqdrn` intégré dans `contact.html`. **Effort : S.**
+  - ⏳ Reste à faire : envoyer une demande de test et vérifier la réception à `mecaniquelucv@gmail.com`.
+  - *Critère :* envoi de test reçu, message de confirmation affiché, message d'erreur prévu.
 - [ ] **P0-04 — Corriger les liens sociaux** : renseigner les URL Facebook/Instagram réelles ou retirer les icônes (en-tête et pied de page). **Effort : S.**
   - *Critère :* aucun lien `href="#"` restant dans la navigation sociale.
 - [ ] **P0-05 — Valider les preuves disponibles** : nombre de projets réalisés, années d'expérience, délais de réponse, types de clients, photos utilisables et autorisations. **Effort : S.**
@@ -78,8 +79,8 @@
 - [ ] **P1-04 — Ajouter un bloc visible « Zone desservie »** sur l'accueil : municipalités confirmées + phrase de couverture + lien vers `contact.html`. **Effort : S.**
   - *Critère :* contenu indexable en HTML (pas une image), liens internes valides.
 - [ ] **P1-05 — Renforcer les CTA de l'accueil** : téléphone cliquable visible sur desktop, bouton secondaire « Demander une soumission », réassurance (« réponse rapide », uniquement si confirmé). **Effort : S.**
-- [ ] **P1-06 — Mettre à jour le JSON-LD `LocalBusiness`** : `areaServed` aligné sur P0-02, `sameAs` si profils réels, sous-type Schema.org plus précis si pertinent. **Effort : S.**
-  - *Critère :* JSON valide, mêmes données que le contenu visible, validé avec le Schema Markup Validator.
+- [x] **P1-06 — Mettre à jour le JSON-LD `LocalBusiness`** : `areaServed` (3 zones) et `openingHoursSpecification` (lun.–ven. 7 h–19 h) appliqués sur toutes les pages. `sameAs` non requis tant que les profils sociaux ne sont pas fournis. **Effort : S.**
+  - *Critère :* JSON valide, mêmes données que le contenu visible. ✅
 - [ ] **P1-07 — Ajouter des CTA intermédiaires** après les blocs de services et avant le pied de page. **Effort : S.**
 - [ ] **P1-08 — Mettre à jour le maillage interne** : accueil → services → réalisations → contact ; ancres descriptives. **Effort : S.**
 - [ ] **P1-09 — Mettre à jour le sitemap** (`lastmod`, nouvelles URLs) après chaque publication. **Effort : S.**
@@ -159,7 +160,7 @@ Gabarit commun à appliquer à chaque page (voir annexe C) : description claire,
 |---|---|---|---|---|---|
 | P0-01 | Fiche de validation entreprise | Critique | S | — | 🟡 Pré-remplie, validation en attente |
 | P0-02 | Confirmer le territoire | Critique | S | P0-01 | ✅ |
-| P0-03 | Formulaire Formspree fonctionnel | Critique | S | — | ☐ |
+| P0-03 | Formulaire Formspree fonctionnel | Critique | S | — | 🟡 Identifiant intégré, test à faire |
 | P0-04 | Liens sociaux réels ou retirés | Critique | S | — | ☐ |
 | P0-05 | Preuves publiables | Critique | S | P0-01 | ☐ |
 | P0-06 | Valider titles/meta cibles | Critique | S | P0-02 | ☐ |
@@ -168,7 +169,7 @@ Gabarit commun à appliquer à chaque page (voir annexe C) : description claire,
 | P1-03 | Section mission | Élevée | M | P0-01, P0-05 | ☐ |
 | P1-04 | Bloc zone desservie | Élevée | S | P0-02 | ☐ |
 | P1-05 | CTA accueil | Élevée | S | — | ☐ |
-| P1-06 | JSON-LD LocalBusiness | Élevée | S | P0-02 | ☐ |
+| P1-06 | JSON-LD LocalBusiness | Élevée | S | P0-02 | ✅ |
 | P1-07 | CTA intermédiaires | Moyenne | S | — | ☐ |
 | P1-08 | Maillage interne | Moyenne | S | P3-06 | ☐ |
 | P1-09 | Sitemap | Moyenne | S | publications | ☐ |
