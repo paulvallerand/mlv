@@ -2,7 +2,7 @@
 
 > Suivi de mise en œuvre : [`backlog-seo-geo-mecanique-luc-vallerand.md`](backlog-seo-geo-mecanique-luc-vallerand.md).
 
-**Territoire ciblé :** Beauce et Chaudière-Appalaches\
+**Territoire ciblé :** Beauce, Chaudière-Appalaches et région de Québec\
 **Clientèles :** particuliers, entrepreneurs et entreprises
 industrielles\
 **Objectifs :** améliorer la visibilité sur Google, obtenir davantage de
@@ -35,7 +35,8 @@ coordonnées et des photos.
 
 Les points à renforcer ou à vérifier :
 
--   Le ciblage géographique de la Beauce et de Chaudière-Appalaches.
+-   Le ciblage géographique de la Beauce, de Chaudière-Appalaches et de
+    la région de Québec.
 -   La précision des descriptions de services.
 -   Les réalisations détaillées avec photos originales.
 -   Les titres SEO et méta-descriptions uniques.
@@ -85,8 +86,7 @@ Chaque service important devrait avoir sa propre page optimisée.
 
 ### Ciblage géographique
 
-Commencer par une page d'accueil qui cible clairement la Beauce et
-Chaudière-Appalaches.
+Commencer par une page d'accueil qui cible clairement la Beauce, Chaudière-Appalaches et la région de Québec.
 
 Municipalités à considérer, uniquement si elles correspondent au
 territoire réellement desservi :

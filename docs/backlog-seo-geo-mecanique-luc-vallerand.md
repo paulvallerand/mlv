@@ -33,7 +33,7 @@
 | H1 | Un seul par page | — |
 | Hiérarchie H1→H2→H3 | Corrigée | — |
 | Canonical | Présent sur toutes les pages | — |
-| JSON-LD | `LocalBusiness` (accueil, contact, services), `Service` + `FAQPage` sur les 5 pages de service | `areaServed` = Beauce + Région de Québec ; Chaudière-Appalaches non confirmée |
+| JSON-LD | `LocalBusiness` (accueil, contact, services), `Service` + `FAQPage` sur les 5 pages de service | `areaServed` aligné sur les 3 zones : Beauce, Chaudière-Appalaches, région de Québec |
 | FAQ | 3 questions par page de service | À enrichir (5 à 7 questions) |
 | `robots.txt` | `Allow: /` + sitemap déclaré | Pas de règle explicite pour `OAI-SearchBot` |
 | `sitemap.xml` | 8 URLs, `lastmod` au 2026-11-11 | À mettre à jour à chaque publication |
@@ -51,10 +51,12 @@
 
 > Aucune publication de contenu ne démarre avant la validation de la fiche entreprise.
 
-- [ ] **P0-01 — Remplir la fiche de validation** (annexe A) : coordonnées, année de fondation, horaires, territoire réellement desservi, services, matériaux, procédés, équipements, capacité atelier/sur site, garanties éventuelles. **Effort : S.**
+- [ ] **P0-01 — Remplir la fiche de validation** : coordonnées, année de fondation, horaires, territoire réellement desservi, services, matériaux, procédés, équipements, capacité atelier/sur site, garanties éventuelles. **Effort : S.**
+  - Fiche créée et pré-remplie le 13 novembre 2026 : [`fiche-validation-entreprise.md`](fiche-validation-entreprise.md).
+  - ⏳ Reste à faire : entrevue de validation avec le propriétaire (section 10 de la fiche) et signature (section 12).
   - *Critère :* fiche remplie et datée, validée par le propriétaire.
-- [ ] **P0-02 — Confirmer le territoire** : Beauce, Chaudière-Appalaches, région de Québec. Retirer de la liste les municipalités non desservies (Saint-Georges, Sainte-Marie, Beauceville, Saint-Joseph-de-Beauce, Thetford Mines, Lévis, Québec, etc.). **Effort : S.**
-  - *Critère :* liste courte et définitive disponible pour le site, le JSON-LD et GBP.
+- [x] **P0-02 — Confirmer le territoire** : Beauce, Chaudière-Appalaches et région de Québec, avec les 8 municipalités validées (voir fiche, sections 3.1 et 3.2). Formulation appliquée au contenu et au JSON-LD `areaServed`. **Effort : S.**
+  - *Critère :* liste courte et définitive disponible pour le site, le JSON-LD et GBP. ✅ (reste à reporter sur GBP en P4-03).
 - [ ] **P0-03 — Rendre le formulaire de contact fonctionnel** : remplacer `VOTRE_ID` dans `contact.html` par l'identifiant Formspree réel (ou un autre service). **Effort : S.**
   - *Critère :* envoi de test reçu, page de confirmation affichée, message d'erreur prévu.
 - [ ] **P0-04 — Corriger les liens sociaux** : renseigner les URL Facebook/Instagram réelles ou retirer les icônes (en-tête et pied de page). **Effort : S.**
@@ -155,8 +157,8 @@ Gabarit commun à appliquer à chaque page (voir annexe C) : description claire,
 
 | ID | Tâche | Priorité | Effort | Dépend de | Statut |
 |---|---|---|---|---|---|
-| P0-01 | Fiche de validation entreprise | Critique | S | — | ☐ |
-| P0-02 | Confirmer le territoire | Critique | S | P0-01 | ☐ |
+| P0-01 | Fiche de validation entreprise | Critique | S | — | 🟡 Pré-remplie, validation en attente |
+| P0-02 | Confirmer le territoire | Critique | S | P0-01 | ✅ |
 | P0-03 | Formulaire Formspree fonctionnel | Critique | S | — | ☐ |
 | P0-04 | Liens sociaux réels ou retirés | Critique | S | — | ☐ |
 | P0-05 | Preuves publiables | Critique | S | P0-01 | ☐ |
@@ -190,31 +192,13 @@ Gabarit commun à appliquer à chaque page (voir annexe C) : description claire,
 
 ---
 
-## Annexe A — Fiche de validation à remplir
+## Annexe A — Fiche de validation
 
-> À remplir avec le propriétaire. Tant qu'un champ est vide, il reste `À CONFIRMER` et n'est pas publié.
+La fiche complète, avec le statut de chaque donnée (✅ confirmé / 🟡 à valider / ⛔ à confirmer), les questions à poser au propriétaire et la section de signature, se trouve dans :
 
-| Champ | Valeur confirmée |
-|---|---|
-| Nom légal / nom commercial | Mécanique Luc Vallerand |
-| Année de fondation | 2019 (à confirmer) |
-| Adresse | 524 rue Principale, Saint-Honoré-de-Shenley (QC) G0M 1V0 |
-| Téléphone | 418-313-4032 |
-| Courriel | mecaniquelucv@gmail.com |
-| Horaires | À CONFIRMER |
-| Territoire desservi | À CONFIRMER (Beauce / Chaudière-Appalaches / région de Québec) |
-| Municipalités desservies | À CONFIRMER |
-| Services réellement offerts | Découpe, fabrication, installation, modification, réparation (à confirmer) |
-| Matériaux travaillés | À CONFIRMER (acier, aluminium, inox, etc.) |
-| Procédés | À CONFIRMER (soudage, pliage, découpe, assemblage, etc.) |
-| Intervention sur site | À CONFIRMER |
-| Types de clients | Particuliers, entrepreneurs, entreprises industrielles (à confirmer) |
-| Délai de réponse aux demandes | À CONFIRMER |
-| Garanties / assurances | À CONFIRMER |
-| Profils sociaux | À CONFIRMER |
-| Fiche Google Business Profile | À CONFIRMER |
-| Photos utilisables (droits) | À CONFIRMER |
-| Témoignages autorisés | À CONFIRMER |
+**→ [`fiche-validation-entreprise.md`](fiche-validation-entreprise.md)**
+
+Cette fiche remplace le tableau initialement prévu ici et sert de source de vérité unique pour tous les contenus du site.
 
 ## Annexe B — Titles et meta descriptions cibles
 
