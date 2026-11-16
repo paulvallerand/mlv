@@ -3,6 +3,7 @@
 > Généré à partir de [`seo-mecaniquelucv-strategie.md`](seo-mecaniquelucv-strategie.md) (15 novembre 2026).
 > Périmètre : SEO local, optimisation du site, contenu, réputation et présence en ligne.
 > Hors périmètre : refonte graphique complète, changement d'hébergeur, développement applicatif.
+> **Avancement (15 novembre 2026)** : `SITE-02`, `SITE-04`, `SITE-05` réalisés côté site (titles/meta prioritaires, pages `services-soudage.html` et `services-maintenance-industrielle.html`, intégration menus/pieds de page/`services-tous.html`/formulaire contact/sitemap). Les tâches GBP, avis, analytics/Search Console, citations, contenu validé et données non confirmées restent à traiter.
 
 ## Mode d'emploi
 
@@ -35,7 +36,7 @@
 | AVIS-01 | Générer le lien direct d'avis Google et préparer le message type (SMS/courriel) | P0 | S | GBP-01 | [ ] | Lien testé; modèle validé et prêt à être envoyé. |
 | AVIS-02 | Demander les 5 premiers avis à des clients satisfaits récents (le jour de la livraison quand possible) | P0 | R | AVIS-01 | [ ] | ≥ 5 demandes envoyées; suivi des réponses consigné. |
 | SITE-01 | Valider les faits publiables (territoire, services offerts, soudure mobile/dépannage, certifications, matériaux, procédés, délais, promesses « gratuit » / « 24 h ») | P0 | S | — | [ ] | Fiche de validation datée; toute donnée incertaine marquée `À CONFIRMER`. |
-| SITE-02 | Réécrire les balises title/meta des pages prioritaires (Accueil, Fabrication, Réparation, Contact) selon l'annexe A | P0 | S | SITE-01 | [ ] | Titles/meta uniques, cohérents avec le contenu, sans promesse non tenue. |
+| SITE-02 | Réécrire les balises title/meta des pages prioritaires (Accueil, Fabrication, Réparation, Contact) selon l'annexe A | P0 | S | SITE-01 | [x] | Fait le 2026-11-15 : titles/meta/OG mis à jour (Accueil, Fabrication, Réparation, Contact) en cohérence avec les faits confirmés, sans promesse « urgente » ou « gratuite ». |
 | SITE-03 | Créer/valider l'adresse courriel `@mecaniquelucv.com` et planifier le remplacement du Gmail | P1 | M | — | [ ] | Adresse fonctionnelle; redirection/signature en place; plan de mise à jour des mentions. |
 | MES-01 | Installer/configurer Google Search Console et soumettre le sitemap | P0 | S | — | [ ] | Propriété vérifiée, sitemap soumis, aucune erreur bloquante. |
 | MES-02 | Installer/configurer Google Analytics 4 (ou équivalent) avec événement « clic sur téléphone » et suivi formulaire | P1 | M | — | [ ] | Mesure active, événements de contact testés. |
@@ -49,15 +50,15 @@
 
 | ID | Tâche | Priorité | Effort | Dépend de | Statut | Critère d'acceptation |
 |---|---|---|---|---|---|---|
-| SITE-04 | Créer la page **Soudage** (MIG, TIG, arc, matériaux, procédés, certifications si confirmées) | P0 | L | SITE-01 | [ ] | 400–800 mots utiles, H1 unique, title/meta, FAQ, photos réelles, CTA soumission, maillage interne. |
-| SITE-05 | Créer la page **Maintenance industrielle** (corrective, préventive, arrêts planifiés) | P1 | L | SITE-01 | [ ] | 400–800 mots utiles, H1 unique, title/meta, FAQ, CTA, cas/types d'intervention confirmés. |
+| SITE-04 | Créer la page **Soudage** (MIG, TIG, arc, matériaux, procédés, certifications si confirmées) | P0 | L | SITE-01 | [x] | Fait le 2026-11-15 : `services-soudage.html` créée (H1/title/meta/canonical, Service + FAQ JSON-LD, contenu factuel atelier/sur site, FAQ, CTA, maillage). Procédés/matériaux/certifications spécifiques non revendiqués faute de confirmation; photos dédiées à ajouter si disponibles. |
+| SITE-05 | Créer la page **Maintenance industrielle** (corrective, préventive, arrêts planifiés) | P1 | L | SITE-01 | [x] | Fait le 2026-11-15 : `services-maintenance-industrielle.html` créée (H1/title/meta/canonical, Service + FAQ JSON-LD, contenu factuel maintenance/entretien/correctif, atelier ou sur site, FAQ, CTA, maillage). Détails « préventif/arrêts planifiés » à préciser si confirmés; photos dédiées à ajouter si disponibles. |
 | SITE-06 | Créer la page **Soudure mobile / dépannage sur site** (zone, délais, types de pannes) — seulement si le service est réellement offert | P0 | L | SITE-01 | [ ] | 400–800 mots utiles, zone/délais confirmés, FAQ urgence, CTA téléphone visible; page non créée si service non offert. |
 | SITE-07 | Enrichir les pages existantes (Découpe, Fabrication, Installation, Modification, Réparation) avec matériaux, procédés, dimensions/capacités confirmés | P1 | M | SITE-01 | [ ] | Chaque page contient détails concrets et vérifiés; aucun texte générique inventé. |
 | SITE-08 | Étendre la FAQ aux services concernés (prix, délais, urgences, déplacement) avec réponses factuelles | P1 | M | SITE-01, SITE-07 | [ ] | FAQ visible pertinente par page; réponses cohérentes avec les faits validés. |
 | SITE-09 | Renommer les fichiers images de façon descriptive et corriger les attributs `alt` | P1 | M | — | [ ] | Noms explicites (ex. `echelle-metallique-sur-mesure-beauce.webp`), `alt` précis, rendu inchangé. |
 | SITE-10 | Transformer des réalisations en études de cas (problème → solution → matériau → délai → résultat) | P1 | L | SITE-01 | [ ] | ≥ 2 études de cas publiées avec photos réelles et données confirmées/autorisées. |
 | SITE-11 | Ajouter/mettre à jour le JSON-LD `LocalBusiness` sur l'accueil (adresse, téléphone, horaires, zone desservie) | P1 | S | SITE-01, SITE-03 | [ ] | JSON-LD valide, cohérent avec contenu visible et NAP; avis inclus seulement si réels et visibles. |
-| SITE-12 | Mettre en place le maillage interne (accueil ↔ services ↔ études de cas/contact) | P2 | S | SITE-04, SITE-05, SITE-06, SITE-10 | [ ] | Liens contextuels présents, ancres descriptives, aucun lien cassé. |
+| SITE-12 | Mettre en place le maillage interne (accueil ↔ services ↔ études de cas/contact) | P2 | S | SITE-04, SITE-05, SITE-06, SITE-10 | [ ] | Partiel (2026-11-15) : nouvelles pages Soudage/Maintenance intégrées aux menus, pieds de page, `services-tous.html`, formulaire contact et sitemap; liens contextuels ajoutés dans les pages créées. Reste : maillage études de cas/pages locales et renforcement global. |
 | CIT-02 | Inscrire l'entreprise dans 8 à 10 annuaires/citations avec NAP identique (Pages Jaunes, Facebook, LinkedIn, Waze, Apple Maps, Bing Places, annuaires locaux pertinents) | P1 | M | CIT-01, GBP-01 | [ ] | ≥ 8 inscriptions créées/mises à jour avec NAP identique; suivi consigné. |
 | AVIS-03 | Poursuivre la collecte d'avis pour atteindre 10 avis | P0 | R | AVIS-02 | [ ] | ≥ 10 avis Google; toutes les demandes/réponses tracées. |
 | GBP-08 | Publier 1 publication Google par semaine (projet terminé, photo, conseil) | P2 | R | GBP-01, GBP-07 | [ ] | ≥ 4 publications sur la période; contenu réel et utile. |
