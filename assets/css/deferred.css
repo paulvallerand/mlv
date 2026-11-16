@@ -105,7 +105,7 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: rgba(249, 77, 29, 0.14);
+  background: color-mix(in srgb, var(--mlv-orange) 14%, transparent);
   color: var(--mlv-orange);
   font-family: "Ubuntu", sans-serif;
   font-size: 13px;

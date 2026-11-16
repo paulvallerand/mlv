@@ -304,8 +304,8 @@ La phase 1 ajoute **`assets/css/phase1.css`**, chargé après `style.css`. Cette
 
 | Rôle | Valeur |
 |---|---|
-| Couleur d'accent | `#F94D1D` (orange) |
-| Orange des aplats avec texte blanc | `#C93A0E` (contraste AA) |
+| Couleur d'accent | `#f0522d` (orange) |
+| Orange des aplats avec texte blanc | `#f0522d` (contraste AA) |
 | Texte clair | `#CFD0D0` / `#D7D8D9` |
 | Fond sombre | `#030404`, surfaces `#0F1212` et `#151B1B` |
 | Texte des boutons | `#FFFFFF` |
@@ -703,7 +703,7 @@ Fichiers concernés : `index.html` et `services-tous.html`.
 ### Accessibilité
 
 - ✅ Renseigner tous les `alt` (phase 0).
-- ✅ Vérifier les contrastes de texte (orange soutenu `#C93A0E` pour les aplats avec texte blanc, phase 1).
+- ✅ Vérifier les contrastes de texte (orange soutenu `#f0522d` pour les aplats avec texte blanc, phase 1).
 - ✅ Ajouter `aria-label` aux liens iconographiques (réseaux sociaux, retour en haut).
 - ✅ S'assurer que la visionneuse est utilisable au clavier (Entrée/Espace, Échap, focus géré).
 - ✅ Ajouter des états de focus visibles (`:focus-visible`).

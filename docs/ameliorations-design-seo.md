@@ -55,7 +55,7 @@ Le site possède de bonnes bases : grille responsive, identité orange/noir, ima
 
 - Site **statique** : rapide, sécurisé, peu coûteux à héberger.
 - **Responsive** grâce à Bootstrap et au menu mobile maison (vanilla JS).
-- **Palette identifiable** : orange `#F94D1D`, fond sombre, photos industrielles.
+- **Palette identifiable** : orange `#f0522d`, fond sombre, photos industrielles.
 - **Galerie de réalisations** existante, avec visionneuse au clic.
 - **Images WebP** pour les visuels de structure.
 - **Analytics** déjà en place (GA4).
@@ -101,7 +101,7 @@ Le site possède de bonnes bases : grille responsive, identité orange/noir, ima
 
 ```css
 :root {
-  --mlv-orange: #F94D1D;
+  --mlv-orange: #f0522d;
   --mlv-orange-dark: #D63E12;
   --mlv-charcoal: #1C1E1E;
   --mlv-charcoal-soft: #272A2A;

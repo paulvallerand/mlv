@@ -6,8 +6,8 @@
 /* Police Inter chargée via <link> dans le HTML (voir index.html) pour éviter le rendu bloquant. */
 
 :root {
-  --mlv-orange: #f94d1d;
-  --mlv-orange-dark: #c93a0e;
+  --mlv-orange: #f0522d;
+  --mlv-orange-dark: #f0522d;
   --mlv-black: #030404;
   --mlv-surface: #0f1212;
   --mlv-surface-2: #151b1b;
@@ -466,7 +466,7 @@ textarea:focus-visible,
 
 .mlv-services .services__area-item:hover {
   transform: translateY(-4px);
-  border-color: rgba(249, 77, 29, 0.5);
+  border-color: color-mix(in srgb, var(--mlv-orange) 50%, transparent);
   background: #161c1c;
 }
 
@@ -543,7 +543,7 @@ textarea:focus-visible,
 
 .mlv-why__card:hover {
   transform: translateY(-4px);
-  border-color: rgba(249, 77, 29, 0.45);
+  border-color: color-mix(in srgb, var(--mlv-orange) 45%, transparent);
 }
 
 .mlv-why__icon {
@@ -554,7 +554,7 @@ textarea:focus-visible,
   height: 54px;
   margin-bottom: 20px;
   border-radius: 50%;
-  background: rgba(249, 77, 29, 0.12);
+  background: color-mix(in srgb, var(--mlv-orange) 12%, transparent);
   color: var(--mlv-orange);
   font-size: 22px;
 }
@@ -1290,7 +1290,7 @@ textarea:focus-visible,
   top: 0;
   z-index: 10002;
   padding: 12px 18px;
-  background: var(--mlv-orange-dark, #C93A0E);
+  background: var(--mlv-orange-dark, #f0522d);
   color: #fff;
   font-weight: 600;
   text-decoration: none;
@@ -1325,7 +1325,7 @@ a, button, .theme-btn-1, .mlv-callbar, .scroll-up, .popup-nav, .close {
 .theme-btn-1:focus-visible,
 .footer__area-widget-about-social a:focus-visible,
 .header__area-bottom-icon a:focus-visible {
-  outline: 2px solid var(--mlv-orange, #F94D1D);
+  outline: 2px solid var(--mlv-orange, #f0522d);
   outline-offset: 3px;
 }
 
@@ -1386,7 +1386,7 @@ a, button, .theme-btn-1, .mlv-callbar, .scroll-up, .popup-nav, .close {
 .mlv-contact__info h2 { margin-bottom: 12px; }
 .mlv-contact__list { list-style: none; padding: 0; margin: 20px 0; }
 .mlv-contact__list li { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; color: #CFD0D0; }
-.mlv-contact__list i { color: #F94D1D; margin-top: 4px; }
+.mlv-contact__list i { color: #f0522d; margin-top: 4px; }
 .mlv-contact__list a { color: #fff; }
 .mlv-contact__hours { color: #9FA0A1; font-size: 14px; margin-top: 16px; }
 .mlv-contact__note { font-size: 12px; color: #9FA0A1; margin-top: 10px; }
