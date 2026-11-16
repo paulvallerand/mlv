@@ -5533,7 +5533,6 @@ Menu Bar
 ==========================================================================*/
 .header__area {
   padding: 0 50px;
-  position: absolute;
   width: 100%;
   top: 0;
   z-index: 9999;
@@ -5871,7 +5870,7 @@ Mean Menu Css
 }
 
 .mean-container a.meanmenu-reveal span {
-  background: #FFFFFF;
+  background: var(--mlv-black);
   margin-top: 6px;
 }
 
