@@ -1,12 +1,14 @@
 // Service worker — cache des assets statiques pour une expérience mobile plus rapide
-const CACHE = 'mlv-v7';
+const CACHE = 'mlv-v9';
 const ASSETS = [
   '/',
   '/index.html',
+  '/notre-mission.html',
+  '/contact.html',
+  '/services-tous.html',
   '/assets/css/critical.css',
   '/assets/css/deferred.css',
-  '/assets/sass/style.css',
-  '/assets/js/custom.js',
+  '/assets/js/custom.min.js',
   '/assets/img/logo-1.webp',
   '/assets/img/banner.webp',
 ];

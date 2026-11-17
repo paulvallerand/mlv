@@ -1890,3 +1890,11 @@ a, button, .theme-btn-1, .mlv-callbar, .scroll-up, .popup-nav, .close {
     display: none;
   }
 }
+.mlv-footer__logo { height: auto; }
+.banner-bg-default { background-image: url('../img/banner.webp'); }
+.hero--compact { padding-top: 100px; padding-bottom: 0; }
+.bg-mlv-black { background: var(--mlv-black); }
+.bg-mlv-black-pt0 { background: var(--mlv-black); padding-top: 0; }
+.hero__eyebrow-wrap { align-items: center; }
+.hero__eyebrow-line { background: var(--mlv-orange); width: 2.5rem; height: 1px; margin: 0 15px 20px 0; }
+.mlv-text-center-mt24 { text-align: center; margin-top: 24px; }
