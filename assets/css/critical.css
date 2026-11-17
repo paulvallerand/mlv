@@ -45,6 +45,7 @@ body{font-family:Inter,sans-serif;color:#cfd0d0;font-size:16px;line-height:26px;
   --mlv-text: #d7d8d9;
   --mlv-muted: #b0b3b5;
   --mlv-radius: 10px;
+  --mlv-font-heading: "Barlow Condensed", sans-serif;
 }
 
 html {
@@ -64,6 +65,14 @@ h4,
 h5,
 h6 {
   letter-spacing: -0.015em;
+}
+
+/* Titres : Barlow Condensed (h1 à h4) */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--mlv-font-heading);
 }
 
 p {
