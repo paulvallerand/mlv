@@ -1,5 +1,5 @@
 // Service worker — cache des assets statiques pour une expérience mobile plus rapide
-const CACHE = 'mlv-v11';
+const CACHE = 'mlv-v12';
 const ASSETS = [
   '/',
   '/index.html',
