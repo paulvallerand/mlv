@@ -144,7 +144,6 @@ textarea:focus-visible,
 }
 
 .hero__lead {
-  max-width: 610px;
   margin-bottom: 30px;
   color: #c9cbcc;
   font-size: 18px;
